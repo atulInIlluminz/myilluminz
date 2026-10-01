@@ -3,38 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Illuminz – Motion Design & Animation</title>
-  <meta name="description" content="Cinematic motion graphics, storyboards, explainer videos, character and Lottie animations by Illuminz." />
+  <title>Motion Graphics &amp; Storyboarding | illuminz</title>
+  <meta name="description" content="Cinematic motion graphics, storyboards, explainer videos, character and Lottie animations by illuminz." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <!-- Graphik is the design font (licensed). Inter is the free fallback; Instrument Serif stands in for "Metal". -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 
   <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="logo" aria-label="Illuminz home">
-        <span class="logo-mark" aria-hidden="true"></span>
-        <span class="logo-text">illuminz</span>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="illuminz home">
+        <img src="assets/brand/logo.png" alt="illuminz" width="122" height="31" />
       </a>
 
-      <span class="ai-badge">Powered by AI <span aria-hidden="true">✦</span></span>
+      <span class="ai-badge">Powered by AI <img src="assets/brand/sparkle.png" alt="" width="23" height="23" /></span>
 
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
 
-      <nav id="primary-nav" class="primary-nav">
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
         <ul>
           <li><a href="#">Services</a></li>
           <li><a href="#">Our products</a></li>
           <li><a href="#">Clients</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="#">Know us</a></li>
           <li><a href="#">Insights</a></li>
         </ul>
-        <a href="#contact" class="btn btn-primary btn-sm">Contact us <span aria-hidden="true">›</span></a>
+        <a href="#contact" class="btn-contact">Contact us
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 14 14 6M7.5 6H14v6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </nav>
     </div>
   </header>
@@ -42,56 +45,65 @@
   <main>
 
     <!-- ================= HERO ================= -->
-    <section class="hero">
-      <!-- Decorative 3D shapes: swap the spans for your exported 3D PNGs if preferred -->
-      <span class="shape shape-sphere" aria-hidden="true"></span>
-      <span class="shape shape-pyramid" aria-hidden="true"></span>
-      <span class="shape shape-star" aria-hidden="true">★</span>
-      <span class="shape shape-blob" aria-hidden="true"></span>
-      <span class="shape shape-cube" aria-hidden="true"></span>
-
-      <div class="container">
-        <h1 class="hero-title">
-          <span class="line-1"><mark class="highlight">Ideas</mark> in mot</span>
-          <span class="line-2">Stories that stick.</span>
-        </h1>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shapes" aria-hidden="true">
+        <img class="shape shape--sphere"  data-depth="0.6" src="assets/hero/sphere-purple.png"  alt="" width="176" height="176" />
+        <img class="shape shape--pyramid" data-depth="0.9" src="assets/hero/pyramid-orange.png" alt="" width="214" height="214" />
+        <img class="shape shape--star"    data-depth="0.5" src="assets/hero/star-teal.png"      alt="" width="261" height="261" />
+        <img class="shape shape--blob"    data-depth="0.8" src="assets/hero/blob-green.png"     alt="" width="313" height="313" />
+        <img class="shape shape--cube"    data-depth="0.4" src="assets/hero/cube-yellow.png"    alt="" width="228" height="295" />
       </div>
+
+      <h1 class="hero-title" id="hero-title">
+        <span class="hero-line hero-line--1">
+          <span class="ideas"><span>Ideas</span></span>
+          <span class="hero-word">in</span>
+          <span class="typed" data-words="motion">
+            <span class="caret" aria-hidden="true"></span><span class="typed-text">mot</span>
+          </span>
+        </span>
+        <span class="hero-line hero-line--2">Stories that stick.</span>
+      </h1>
     </section>
 
     <!-- ================= INTRO (DARK) ================= -->
-    <section class="intro">
-      <div class="container">
-        <div class="intro-frame">
-          <h2 class="intro-title">Static visuals inform.<br />Moving visuals connect.</h2>
-          <p class="intro-text">
-            We bring your concepts to life through cinematic motion graphics, compelling storyboards, and
-            animation that resonates frame by frame. Whether you're simplifying a complex idea or building a
-            brand world from scratch, we make sure every movement has meaning.
-          </p>
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-frame">
+        <div class="intro-box">
+          <h2 class="intro-title" id="intro-title" data-reveal>
+            <span class="intro-line">Static visuals <span class="nb"><span class="swap">inform</span>.</span></span>
+            <span class="intro-line">Moving visuals <span class="nb"><span class="swap swap--2">connect</span>.</span></span>
+          </h2>
         </div>
+        <p class="intro-text" data-reveal>
+          We bring your concepts to life through cinematic motion graphics, compelling storyboards, and animation
+          that resonates-frame by frame. Whether you’re simplifying a complex idea or building a brand world from
+          scratch, we make sure every movement has meaning.
+        </p>
       </div>
+
+      <!-- Timeline: clips glide along tracks while the playhead sweeps across -->
       <div class="timeline" aria-hidden="true">
-        <span class="track t-yellow"></span>
-        <span class="track t-red"></span>
-        <span class="track t-blue"></span>
-        <span class="track t-green"></span>
+        <span class="track"></span><span class="track"></span><span class="track"></span><span class="track"></span>
+        <span class="clip clip--yellow"><i></i><i></i></span>
+        <span class="clip clip--red"><i></i><i></i></span>
+        <span class="clip clip--green"><i></i><i></i></span>
+        <span class="clip clip--blue"><i></i><i></i></span>
+        <span class="playhead"></span>
       </div>
     </section>
 
     <!-- ================= SERVICES ================= -->
-    <section class="services container">
+    <section class="services" aria-label="Services">
 
-      <article class="service service--yellow">
+      <article class="service service--yellow" data-reveal>
         <div class="service-head">
-          <div>
+          <div class="service-intro">
             <p class="eyebrow">Storyboarding</p>
             <h3 class="service-title">Great animation starts with great storytelling.</h3>
           </div>
-          <div>
-            <p class="service-text">
-              We sketch out the rhythm, tone, and narrative of your motion piece before the first frame is rendered.
-              From explainer videos to product journeys, storyboarding ensures alignment, clarity, and flow.
-            </p>
+          <div class="service-body">
+            <p class="service-text">We sketch out the rhythm, tone, and narrative of your motion piece before the first frame is rendered. From explainer videos to product journeys, storyboarding ensures alignment, clarity, and flow.</p>
             <ul class="tags">
               <li>Illustrated storyboards</li>
               <li>Scene-by-scene direction</li>
@@ -101,21 +113,18 @@
           </div>
         </div>
         <figure class="service-media">
-          <img src="assets/storyboarding.png" alt="Illustration of a hand sketching a storyboard on a tablet" loading="lazy" onerror="this.remove()" />
+          <img src="assets/services/storyboarding.png" alt="Illustration of a hand sketching storyboard frames on a tablet, surrounded by a notebook, phone and coffee" width="1380" height="498" loading="lazy" />
         </figure>
       </article>
 
-      <article class="service service--green">
+      <article class="service service--green" data-reveal>
         <div class="service-head">
-          <div>
+          <div class="service-intro">
             <p class="eyebrow">Explainer Videos</p>
             <h3 class="service-title">Clear. Captivating. Memorable.</h3>
           </div>
-          <div>
-            <p class="service-text">
-              Explainers aren't just about animation—they're about communication. We turn complex ideas into sharp,
-              engaging visuals that inform and convert. Perfect for onboarding, product launches, or investor decks.
-            </p>
+          <div class="service-body">
+            <p class="service-text">Explainers aren’t just about animation-they’re about communication. We turn complex ideas into sharp, engaging visuals that inform and convert. Perfect for onboarding, product launches, or investor decks.</p>
             <ul class="tags">
               <li>Concept, script &amp; storyboard</li>
               <li>Voiceover integration</li>
@@ -125,21 +134,18 @@
           </div>
         </div>
         <figure class="service-media">
-          <img src="assets/explainer-videos.png" alt="Illustration of a person working at a desk and a presenter with video call portraits" loading="lazy" onerror="this.remove()" />
+          <img src="assets/services/explainer-videos.png" alt="Illustration of a designer editing a video at her desk and a presenter in front of video-call portraits" width="1380" height="498" loading="lazy" />
         </figure>
       </article>
 
-      <article class="service service--pink">
+      <article class="service service--pink" data-reveal>
         <div class="service-head">
-          <div>
+          <div class="service-intro">
             <p class="eyebrow">Character Animation</p>
             <h3 class="service-title">Bring your brand to life - literally.</h3>
           </div>
-          <div>
-            <p class="service-text">
-              We create expressive, stylized character animations that add emotion and energy to your stories.
-              Whether it's a brand mascot or a full narrative, we craft motion that feels alive.
-            </p>
+          <div class="service-body">
+            <p class="service-text">We create expressive, stylized character animations that add emotion and energy to your stories. Whether it’s a brand mascot or a full narrative, we craft motion that feels alive.</p>
             <ul class="tags">
               <li>2D character rigging</li>
               <li>Lip-sync &amp; body motion</li>
@@ -149,21 +155,18 @@
           </div>
         </div>
         <figure class="service-media">
-          <img src="assets/character-animation.png" alt="Illustration of a voice artist and an animator editing a character timeline" loading="lazy" onerror="this.remove()" />
+          <img src="assets/services/character-animation.png" alt="Illustration of a voice artist at a microphone and an animator editing a character timeline on a laptop" width="1380" height="498" loading="lazy" />
         </figure>
       </article>
 
-      <article class="service service--purple">
+      <article class="service service--purple" data-reveal>
         <div class="service-head">
-          <div>
+          <div class="service-intro">
             <p class="eyebrow">Lottie Animations</p>
             <h3 class="service-title">Lightweight. High-performance. Beautiful.</h3>
           </div>
-          <div>
-            <p class="service-text">
-              Need micro-interactions for your product? We design sleek, JSON-based Lottie animations that bring UI
-              elements, buttons, loaders, and onboarding flows to life—without slowing things down.
-            </p>
+          <div class="service-body">
+            <p class="service-text">Need micro-interactions for your product? We design sleek, JSON-based Lottie animations that bring UI elements, buttons, loaders, and onboarding flows to life-without slowing things down.</p>
             <ul class="tags">
               <li>UI motion assets</li>
               <li>Web &amp; app-ready exports</li>
@@ -173,54 +176,51 @@
           </div>
         </div>
         <figure class="service-media">
-          <img src="assets/lottie-animations.png" alt="Screenshot of a design tool with the LottieFiles plugin open" loading="lazy" onerror="this.remove()" />
+          <img src="assets/services/lottie-animations.png" alt="Figma editor with the LottieFiles plugin open beside a prototype that says Enrich your prototypes and design with motion" width="1380" height="499" loading="lazy" />
         </figure>
       </article>
 
     </section>
 
     <!-- ================= TOOLS ================= -->
-    <section class="tools container">
-      <h2 class="section-title">Premiere Pro. After<br />Effects. Adobe Animate.</h2>
+    <section class="tools" aria-labelledby="tools-title">
+      <h2 class="section-title tools-title" id="tools-title" data-reveal>Premiere Pro. After Effects. Adobe Animate.</h2>
 
-      <div class="tool-orbit">
+      <div class="tool-stage" data-reveal>
         <figure class="tool tool--lovable">
-          <span class="tool-icon"><img src="assets/lovable.svg" alt="" onerror="this.remove()" /></span>
+          <img src="assets/tools/lovable.png" alt="" width="400" height="280" />
           <figcaption>Lovable</figcaption>
         </figure>
         <figure class="tool tool--figma">
-          <span class="tool-icon"><img src="assets/figma.svg" alt="" onerror="this.remove()" /></span>
+          <img src="assets/tools/figma.png" alt="" width="310" height="310" />
           <figcaption>Figma</figcaption>
         </figure>
         <figure class="tool tool--webflow">
-          <span class="tool-icon"><img src="assets/webflow.svg" alt="" onerror="this.remove()" /></span>
+          <img src="assets/tools/webflow.png" alt="" width="330" height="353" />
           <figcaption>Webflow</figcaption>
         </figure>
       </div>
 
-      <p class="tools-text">
-        From cinematic transitions to snappy Lottie loops, we use the best tools in the industry to bring
-        precision and polish to your story.
-      </p>
+      <p class="tools-text" data-reveal>From cinematic transitions to snappy Lottie loops, we use the best tools in the industry to bring precision and polish to your story.</p>
     </section>
 
     <!-- ================= WHY IT WORKS ================= -->
-    <section class="why container">
-      <h2 class="section-title">Why It Works</h2>
+    <section class="why" aria-labelledby="why-title">
+      <h2 class="section-title why-title" id="why-title" data-reveal>Why It Works</h2>
       <ul class="why-grid">
-        <li class="pill pill--yellow">
+        <li class="pill pill--yellow" data-reveal>
           <h3>Narrative-first motion</h3>
           <p>Every animation has a beginning, middle, and purpose.</p>
         </li>
-        <li class="pill pill--peach">
+        <li class="pill pill--peach" data-reveal>
           <h3>Designed for every screen</h3>
-          <p>Mobile, web, product, or presentation—we cover it all.</p>
+          <p>Mobile, web, product, or presentation-we cover it all.</p>
         </li>
-        <li class="pill pill--lilac">
+        <li class="pill pill--lilac" data-reveal>
           <h3>Emotionally engaging</h3>
-          <p>Motion creates memory. We make sure it's the right one.</p>
+          <p>Motion creates memory. We make sure it’s the right one.</p>
         </li>
-        <li class="pill pill--sky">
+        <li class="pill pill--sky" data-reveal>
           <h3>Built to perform</h3>
           <p>Crisp, fast-loading animations that feel smooth and natural.</p>
         </li>
@@ -228,10 +228,11 @@
     </section>
 
     <!-- ================= CTA ================= -->
-    <section class="cta" id="contact">
-      <div class="container">
-        <h2 class="cta-title">Ready to turn your<br />story into motion?</h2>
-        <p class="cta-text">Let's storyboard, animate, and deliver visuals that your audience won't just see—they'll remember.</p>
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="cta-inner">
+        <h2 class="cta-title" id="cta-title" data-reveal>Ready to turn your story into motion?</h2>
+        <p class="cta-text" data-reveal>Let’s storyboard, animate, and deliver visuals that your audience won’t just see-they’ll remember.</p>
       </div>
     </section>
 
@@ -239,17 +240,16 @@
 
   <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
-    <div class="container">
+    <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="#" class="logo logo--lg" aria-label="Illuminz home">
-            <span class="logo-mark" aria-hidden="true"></span>
-            <span class="logo-text">illuminz</span>
+          <a href="#" class="footer-logo" aria-label="illuminz home">
+            <img src="assets/brand/logo-footer.png" alt="illuminz" width="154" height="41" />
           </a>
-          <p class="footer-heading">Contact Information</p>
+          <p class="footer-heading">Contact information</p>
           <ul class="contact-list">
-            <li><span aria-hidden="true">☏</span> <a href="tel:+919888536051">+91 98885 36051</a></li>
-            <li><span aria-hidden="true">✉</span> <a href="mailto:business@illuminz.com">business@illuminz.com</a></li>
+            <li><img src="assets/icons/call.png" alt="" width="18" height="18" /><a href="tel:+919888586651">+91-98885 86651</a></li>
+            <li><img src="assets/icons/message.png" alt="" width="18" height="18" /><a href="mailto:business@illuminz.com">business@illuminz.com</a></li>
           </ul>
         </div>
 
@@ -257,7 +257,7 @@
           <p class="footer-heading">Quick links</p>
           <ul>
             <li><a href="#">About us</a></li>
-            <li><a href="#">Careers</a> <span class="badge">We're hiring</span></li>
+            <li><a href="#">Careers</a> <span class="badge">We’re Hiring</span></li>
             <li><a href="#">Our Work</a></li>
             <li><a href="#">Our insights</a></li>
             <li><a href="#">Contact us</a></li>
@@ -277,39 +277,41 @@
 
         <div class="footer-subscribe">
           <p class="footer-heading">Subscribe to latest insights</p>
-          <form class="subscribe-form" onsubmit="event.preventDefault()">
-            <label for="email" class="sr-only">Email address</label>
-            <input id="email" type="email" placeholder="E-mail address" required />
-            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          <form class="subscribe-form" action="#" onsubmit="event.preventDefault()">
+            <label for="email" class="sr-only">E-mail address</label>
+            <input id="email" type="email" placeholder="E-mail address" autocomplete="email" required />
+            <button type="submit">Subscribe</button>
           </form>
           <ul class="socials" aria-label="Social links">
-            <li><a href="#" aria-label="Facebook">f</a></li>
-            <li><a href="#" aria-label="Instagram">◎</a></li>
-            <li><a href="#" aria-label="LinkedIn">in</a></li>
-            <li><a href="#" aria-label="Twitter">𝕏</a></li>
-            <li><a href="#" aria-label="Pinterest">P</a></li>
-            <li><a href="#" aria-label="Dribbble">◍</a></li>
+            <li><a href="#" aria-label="Facebook"><img src="assets/icons/facebook.png" alt="" width="19" height="19" /></a></li>
+            <li><a href="#" aria-label="Instagram"><img src="assets/icons/instagram.png" alt="" width="19" height="19" /></a></li>
+            <li><a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.png" alt="" width="19" height="19" /></a></li>
+            <li><a href="#" aria-label="Twitter"><img src="assets/icons/twitter.png" alt="" width="19" height="19" /></a></li>
+            <li><a href="#" aria-label="Dribbble"><img src="assets/icons/dribbble.png" alt="" width="19" height="19" /></a></li>
+            <li><a href="#" aria-label="Pinterest"><img src="assets/icons/pinterest.png" alt="" width="19" height="19" /></a></li>
           </ul>
         </div>
       </div>
 
       <div class="partners">
         <p class="footer-heading">Partnerships</p>
-        <ul class="partner-logos">
-          <li>cognizm</li>
-          <li>Kaaya</li>
-          <li><em>Aasaan</em></li>
-          <li>SWIGGY</li>
-          <li>Adobe</li>
-          <li>KOMPASS</li>
-          <li>travelst</li>
-          <li>POWERLOOK</li>
-        </ul>
+        <div class="partner-track">
+          <ul class="partner-logos">
+            <li><img src="assets/partners/cognism.png" alt="Cognism" width="115" height="22" /></li>
+            <li><img src="assets/partners/kaspr.png" alt="Kaspr" width="75" height="27" /></li>
+            <li><img src="assets/partners/athlete.png" alt="Athlete+" width="83" height="28" /></li>
+            <li><img src="assets/partners/swiggy.png" alt="Swiggy" width="96" height="28" /></li>
+            <li><img src="assets/partners/adobe.png" alt="Adobe" width="102" height="27" /></li>
+            <li><img src="assets/partners/kompass.png" alt="Kompass" width="142" height="24" /></li>
+            <li><img src="assets/partners/travalot.png" alt="Travalot" width="100" height="26" /></li>
+            <li><img src="assets/partners/powerlook.png" alt="Powerlook" width="159" height="21" /></li>
+          </ul>
+        </div>
       </div>
 
       <div class="footer-bottom">
         <div class="address">
-          <span class="flag" aria-hidden="true"></span>
+          <img src="assets/icons/flag-india.png" alt="" width="34" height="34" />
           <div>
             <strong>Chandigarh, India</strong>
             <p>F-213, Level 2, Industrial Area, Phase 8-B, Mohali (PB), India, 160059</p>
@@ -319,20 +321,11 @@
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms of Service</a></li>
         </ul>
-        <p class="copyright">© 2008 - 2025, Illuminz. | All Rights Reserved.</p>
+        <p class="copyright">© 2009 - 2025, illuminz&nbsp; | All Rights Reserved</p>
       </div>
     </div>
   </footer>
 
-  <script>
-    // Mobile navigation toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.getElementById('primary-nav');
-    toggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', open);
-      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
