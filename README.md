@@ -26,3 +26,25 @@ automatically; otherwise the page falls back to Inter. Tool labels use "Metal" i
 
 ## Breakpoints
 640px (badge shows), 900px (service text goes two-column), 1024px (full nav), 1100px (4 pills, 4-column footer).
+
+---
+
+# Digital Transformation page
+
+`digital-transformation/index.html`, built from the copy in *Digital Transformation (illuminz website).docx*.
+It reuses `../styles.css` (tokens, header, footer, reveals) and `../assets/`, plus its own `dt.css` and `dt.js`.
+
+| Section | Scroll / layout idea |
+|---|---|
+| Hero | "Re-" words with a cycling pastel highlighter; modules (Cloud, AI, APIs, Data…) orbit a "digital core" |
+| Mindset band | Tilted lilac marquee with the "mindset shift" lines |
+| Transform Beyond Technology | Dark section; the statement lights up word by word as you scroll; 5 bento cards fill with pastel on hover; "IT project" gets struck through |
+| Offerings | 6 sticky cards that stack and shrink as you scroll, each with its own animated illustration |
+| Emerging tech | Bento grid with pointer-following spotlight and small animated visuals |
+| Built for Every Vertical | Pinned section: scrolling down slides 7 industry cards sideways (swipe on mobile) |
+| Process | A line draws down the page and lights up each step |
+| Engagement models | Expanding panels (hover/click/focus) plus a Security & IP strip |
+| Outcomes | KPI tiles with count-up numbers, filling bars and a "days → minutes" flip |
+| CTA | Blue gradient with drifting pastel glows |
+
+Reduced-motion users get a static version. Pinned and sticky effects only switch on when the viewport is large enough.
