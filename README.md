@@ -75,3 +75,5 @@ glass cards and CTA gradient match the homepage components. The logos were expor
 
 Placeholder links (`#`) still need real URLs: the booking form, "View the full compliance timeline", the nav and the footer.
 Reduced-motion users get a static version.
+
+`accutive-crypto-discovery-standalone.html` is a single-file copy of the page, with the CSS, JS, logos and Poppins / JetBrains Mono fonts (Latin subset) embedded. It works offline and makes no external requests.
