@@ -77,3 +77,6 @@ Placeholder links (`#`) still need real URLs: the booking form, "View the full c
 Reduced-motion users get a static version.
 
 `accutive-crypto-discovery-standalone.html` is a single-file copy of the page, with the CSS, JS, logos and Poppins / JetBrains Mono fonts (Latin subset) embedded. It works offline and makes no external requests.
+
+`accutive-crypto-discovery/animated-svg/` holds the page graphics as standalone animated SVGs (see its README). The same graphics are
+built as Smart Animate prototypes in Figma, on page *15 - Crypto Discovery (Animated)* of the Accutive file.
