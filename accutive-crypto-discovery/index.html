@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cryptography, HSM Discovery, Inventory &amp; Assessment | Accutive Security</title>
+  <meta name="description" content="Discover. Assess. Remediate. Automate. Expert-led cryptographic discovery, inventory and readiness assessment, powered by Entrust." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="acs.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d097d"/><stop offset="1" stop-color="#7f5fd9"/></linearGradient>
+  </defs>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 9h7M7 12h4"/><circle cx="17" cy="14" r="3"/><path d="M15.5 16.5L15 21l2-1 2 1-.5-4.5"/></g></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="14" r="4"/><path d="M11 11l9-9M16 6l3 3M14 8l2 2"/></g></symbol>
+  <symbol id="i-secret" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.5"/></g></symbol>
+  <symbol id="i-pki" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="5" rx="1"/><rect x="2.5" y="16.5" width="6" height="5" rx="1"/><rect x="15.5" y="16.5" width="6" height="5" rx="1"/><path d="M12 7.5V12M5.5 16.5V12h13v4.5"/></g></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></g></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></g></symbol>
+  <symbol id="i-app" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></g></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 9.5a4.3 4.3 0 0 1-.5 8.5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-radar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/></g></symbol>
+  <symbol id="i-cycle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-14 5.3M4 12A8 8 0 0 1 18 6.7"/><path d="M18 2.5v4.2h-4.2M6 21.5v-4.2h4.2"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></g></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></g></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9.5 17h-19z"/><path d="M12 10v4M12 17.5h.01"/></g></symbol>
+  <symbol id="i-atom" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></g></symbol>
+  <symbol id="i-audit" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 2h3v16H5V5h3z"/><path d="M9 12l2 2 4-4M9 17h6"/></g></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v5M15 2v5M6 7h12v4a6 6 0 0 1-12 0zM12 17v5"/></g></symbol>
+  <symbol id="i-lab" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7.5 15h9"/></g></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11l4-4 4 2 3-2 4 1 5 3"/><path d="M6 13l4 4c.8.8 2 .8 2.8 0l4.7-4.7M9 10l3.5 3.5"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5zM14.5 6.5L17 4l3 3-2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ================= HEADER (Figma "menu") ================= -->
+<div class="topbar">
+  <div class="wrap">
+    <span class="tagline">The Cryptography, Data Protection and Identity Security Center of Excellence</span>
+    <span class="lang">English <svg width="10" height="10" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></span>
+  </div>
+</div>
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <div class="nav-left">
+      <a href="#" class="logo" aria-label="Accutive Security home"><img src="assets/logo-accutive-purple.svg" alt="Accutive Security" width="138" height="44" /></a>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary">
+        <a href="#" aria-current="page">Solutions</a>
+        <a href="#">Services</a>
+        <a href="#">Partners</a>
+        <a href="#">Data Platform</a>
+        <a href="#">Insights</a>
+        <a href="#">Company</a>
+      </nav>
+    </div>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-sm btn-outline">Innovation Lab</a>
+      <a href="#book" class="btn btn-sm btn-dark">Contact Us</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= 1. HERO ================= -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hero-sub"><span class="dot" aria-hidden="true"></span>Cryptographic Discovery, Inventory &amp; Assessment</p>
+      <h1 id="hero-title" data-cycle>
+        <span class="w">Discover.</span> <span class="w">Assess.</span> <span class="w">Remediate.</span> <span class="w">Automate.</span>
+      </h1>
+      <p class="hero-body">Your cryptographic estate is bigger than you think, scattered across cloud, on-prem, CI/CD, and third parties, with no single owner and no central record. Get the map before you commit to a fix.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn btn-primary">Book an Expert-Led Assessment <svg><use href="#i-arrow"/></svg></a>
+        <span class="powered">Powered By <img src="assets/logo-entrust.png" alt="Entrust" width="137" height="46" /></span>
+      </div>
+      <div class="proof">
+        <h2>Every assessment includes</h2>
+        <ul>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>A complete inventory of your cryptographic assets, enterprise-wide</li>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>Readiness scored against quantum, certificate, regulatory, and audit risk</li>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>A prioritized remediation roadmap ready for leadership review</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Discovery radar: the sweep "finds" assets as it passes them -->
+    <div class="radar" aria-hidden="true" data-radar>
+      <svg class="rings" viewBox="0 0 560 560">
+        <circle cx="280" cy="280" r="250" fill="none" stroke="rgba(210,192,255,.35)" stroke-dasharray="4 8"/>
+        <circle cx="280" cy="280" r="190" fill="none" stroke="rgba(210,192,255,.22)"/>
+        <circle cx="280" cy="280" r="130" fill="none" stroke="rgba(210,192,255,.18)" stroke-dasharray="2 6"/>
+        <path d="M280 30v500M30 280h500" stroke="rgba(210,192,255,.08)"/>
+        <circle cx="280" cy="30" r="7" fill="#fff"/><circle cx="64" cy="405" r="7" fill="#fff"/><circle cx="496" cy="405" r="7" fill="#fff"/>
+      </svg>
+      <div class="sweep"></div>
+      <div class="core">
+        <svg viewBox="0 0 100 100"><polygon points="50,2 93,26 93,74 50,98 7,74 7,26" fill="url(#coreGrad)" stroke="#d2c0ff" stroke-width="1.2"/><defs><linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7f5fd9"/><stop offset="1" stop-color="#2d097d"/></linearGradient></defs></svg>
+        <span><b data-count-live>0</b>asset types found</span>
+      </div>
+      <!-- angle (deg, 0 = top, clockwise) and radius (% of box) are read by acs.js -->
+      <span class="asset" data-a="20"  data-r="40"><i></i>TLS Certificates</span>
+      <span class="asset" data-a="62"  data-r="30"><i></i>Symmetric Keys</span>
+      <span class="asset risk" data-a="98" data-r="42"><i></i>Hard-coded Secret</span>
+      <span class="asset" data-a="135" data-r="30"><i></i>Internal CA</span>
+      <span class="asset" data-a="165" data-r="42"><i></i>nShield HSM</span>
+      <span class="asset risk" data-a="205" data-r="31"><i></i>RSA-1024</span>
+      <span class="asset" data-a="240" data-r="43"><i></i>K8s Ingress</span>
+      <span class="asset risk" data-a="278" data-r="32"><i></i>Self-signed Cert</span>
+      <span class="asset" data-a="312" data-r="42"><i></i>Code Signing</span>
+      <span class="asset" data-a="350" data-r="24"><i></i>Vault Tokens</span>
+      <span class="radar-count">scan: cloud · on-prem · CI/CD · third-party &nbsp;<b data-risk>0</b> at risk</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. THE VISIBILITY GAP ================= -->
+<section class="section" aria-labelledby="gap-title">
+  <div class="wrap gap-grid">
+    <div class="gap-copy reveal">
+      <span class="eyebrow">The Visibility Gap</span>
+      <h2 class="h2" id="gap-title">Cryptography: Deployed by Everyone, Owned by No One.</h2>
+      <p class="lead">App teams, cloud engineers, and infrastructure groups each issue and manage their own keys and certificates. Spreadsheets go stale the day they're finished, and they miss exactly what causes outages: self-signed certs, forgotten internal CAs, hard-coded secrets, legacy algorithms buried in old applications.</p>
+      <div class="stats">
+        <div class="stat" data-ring="41">
+          <div class="ring"><svg viewBox="0 0 96 96"><circle class="track" cx="48" cy="48" r="40"/><circle class="bar" cx="48" cy="48" r="40"/></svg><b><span data-count="41">0</span>%</b></div>
+          <p>name poor cryptographic visibility their top readiness barrier</p>
+        </div>
+        <div class="stat" data-ring="38">
+          <div class="ring"><svg viewBox="0 0 96 96"><circle class="track" cx="48" cy="48" r="40"/><circle class="bar" cx="48" cy="48" r="40"/></svg><b><span data-count="38">0</span>%</b></div>
+          <p>are actively preparing for post-quantum</p>
+        </div>
+      </div>
+      <p class="source">Ponemon Institute, sponsored by Entrust, 2026</p>
+      <p class="callout">Discovery isn't a preliminary step. It's what determines whether the real project gets scoped right.</p>
+    </div>
+
+    <div class="owners reveal" style="--d:.15s" aria-hidden="true">
+      <svg class="links" viewBox="0 0 100 90" preserveAspectRatio="none">
+        <path d="M22 20 Q35 40 50 47"/><path d="M78 20 Q65 40 50 47"/><path d="M50 82 Q50 66 50 47"/>
+        <path d="M22 20 Q50 5 78 20"/><path d="M22 20 Q10 60 50 82"/><path d="M78 20 Q90 60 50 82"/>
+      </svg>
+      <div class="team" style="left:22%;top:20%"><span class="av"><svg><use href="#i-app"/></svg></span>App teams</div>
+      <div class="team" style="left:78%;top:20%"><span class="av"><svg><use href="#i-cloud"/></svg></span>Cloud engineers</div>
+      <div class="team" style="left:50%;top:88%"><span class="av"><svg><use href="#i-server"/></svg></span>Infrastructure</div>
+      <div class="owner-q"><div><b>?</b>Central owner</div></div>
+      <span class="flag" style="left:58%;top:36%">self-signed</span>
+      <span class="flag" style="left:6%;top:42%">forgotten CA</span>
+      <span class="flag" style="left:66%;top:62%">hard-coded secret</span>
+      <span class="flag" style="left:12%;top:63%">SHA-1</span>
+      <div class="sheet"><em>stale</em><small>crypto-inventory_FINAL_v7.xlsx</small><span></span><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</section>
+<!-- ================= 3. WHAT DISCOVERY COVERS ================= -->
+<section class="section alt" aria-labelledby="cover-title">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">What Discovery Covers</span>
+      <h2 class="h2" id="cover-title">Every Domain, Every Environment: Encompassed.</h2>
+    </div>
+
+    <div class="scanner reveal" style="--d:.1s">
+      <div class="domains" role="tablist" aria-label="Discovery domains">
+        <button class="domain-btn" role="tab" id="t-cert" aria-controls="p-cert" aria-selected="true"><span class="ic"><svg><use href="#i-cert"/></svg></span>Certificates<span class="n">01</span></button>
+        <button class="domain-btn" role="tab" id="t-keys" aria-controls="p-keys" aria-selected="false" tabindex="-1"><span class="ic"><svg><use href="#i-key"/></svg></span>Keys<span class="n">02</span></button>
+        <button class="domain-btn" role="tab" id="t-secrets" aria-controls="p-secrets" aria-selected="false" tabindex="-1"><span class="ic"><svg><use href="#i-secret"/></svg></span>Secrets<span class="n">03</span></button>
+        <button class="domain-btn" role="tab" id="t-pki" aria-controls="p-pki" aria-selected="false" tabindex="-1"><span class="ic"><svg><use href="#i-pki"/></svg></span>PKI<span class="n">04</span></button>
+        <button class="domain-btn" role="tab" id="t-libs" aria-controls="p-libs" aria-selected="false" tabindex="-1"><span class="ic"><svg><use href="#i-code"/></svg></span>Crypto Libraries<span class="n">05</span></button>
+        <button class="domain-btn" role="tab" id="t-infra" aria-controls="p-infra" aria-selected="false" tabindex="-1"><span class="ic"><svg><use href="#i-server"/></svg></span>Infrastructure<span class="n">06</span></button>
+      </div>
+
+      <div class="console scanning" data-console>
+        <div class="scanline"></div>
+        <div class="console-bar"><i></i><i></i><i></i><span>accutive://discovery &mdash; what gets discovered</span></div>
+
+        <div class="panel" role="tabpanel" id="p-cert" aria-labelledby="t-cert">
+          <h3>Certificates</h3><div class="progress"><span></span></div>
+          <ul class="chips"><li class="chip" style="--i:0">Public and Private TLS</li><li class="chip" style="--i:1">Client</li><li class="chip" style="--i:2">Code Signing</li><li class="chip" style="--i:3">Document Signing</li><li class="chip" style="--i:4">Expiry and Validity Periods</li><li class="chip" style="--i:5">Issuing CAs</li><li class="chip" style="--i:6">Ownership</li></ul>
+        </div>
+        <div class="panel" role="tabpanel" id="p-keys" aria-labelledby="t-keys" hidden>
+          <h3>Keys</h3><div class="progress"><span></span></div>
+          <ul class="chips"><li class="chip" style="--i:0">Symmetric and Asymmetric</li><li class="chip" style="--i:1">Length</li><li class="chip" style="--i:2">Algorithm</li><li class="chip" style="--i:3">Location</li><li class="chip" style="--i:4">Age</li><li class="chip" style="--i:5">Rotation History</li></ul>
+        </div>
+        <div class="panel" role="tabpanel" id="p-secrets" aria-labelledby="t-secrets" hidden>
+          <h3>Secrets</h3><div class="progress"><span></span></div>
+          <ul class="chips"><li class="chip" style="--i:0">API Keys</li><li class="chip" style="--i:1">Tokens</li><li class="chip" style="--i:2">Credentials in Vaults</li><li class="chip" style="--i:3">Pipelines</li><li class="chip" style="--i:4">App Configs</li></ul>
+        </div>
+        <div class="panel" role="tabpanel" id="p-pki" aria-labelledby="t-pki" hidden>
+          <h3>PKI</h3><div class="progress"><span></span></div>
+          <ul class="chips"><li class="chip" style="--i:0">Internal and External CA Hierarchies</li><li class="chip" style="--i:1">Orphaned and Shadow CAs</li><li class="chip" style="--i:2">Trust Store Contents</li><li class="chip" style="--i:3">Policy Config</li></ul>
+        </div>
+        <div class="panel" role="tabpanel" id="p-libs" aria-labelledby="t-libs" hidden>
+          <h3>Crypto Libraries</h3><div class="progress"><span></span></div>
+          <ul class="chips"><li class="chip" style="--i:0">Algorithms and Versions in Use</li><li class="chip" style="--i:1">Across Every Application</li><li class="chip" style="--i:2">Across Every Endpoint</li></ul>
+        </div>
+        <div class="panel" role="tabpanel" id="p-infra" aria-labelledby="t-infra" hidden>
+          <h3>Infrastructure</h3><div class="progress"><span></span></div>
+          <ul class="chips"><li class="chip" style="--i:0">HSMs</li><li class="chip" style="--i:1">Vaults</li><li class="chip" style="--i:2">Load Balancers</li><li class="chip" style="--i:3">Cloud-Native Cert Services</li><li class="chip" style="--i:4">Kubernetes Ingress</li></ul>
+        </div>
+
+        <div class="console-foot"><span>scope: on-prem · multi-cloud · hybrid · third-party</span><span>status: <b>complete</b></span></div>
+      </div>
+    </div>
+
+    <div class="envs reveal">
+      <ul class="env-list" aria-label="Environments in scope">
+        <li class="env">On-prem</li><li class="env">Multi-cloud</li><li class="env">Hybrid</li><li class="env">Third-party managed</li>
+      </ul>
+      <p>On-prem, multi-cloud, hybrid, third-party managed, all in scope. A partial inventory just means a false sense of readiness.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. READINESS ASSESSMENT ================= -->
+<section class="section dark on-dark" aria-labelledby="clocks-title">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#cbb8ff">Readiness Assessment</span>
+        <h2 class="h2" id="clocks-title">Four Clocks Running at Once</h2>
+      </div>
+    </div>
+
+    <!-- Parallel, not sequential: four independent cards -->
+    <div class="clocks">
+      <article class="clock-card reveal" style="--d:0s">
+        <div class="dial" style="--t:4s" aria-hidden="true"><i class="m"></i><i></i><b></b></div>
+        <span class="clock-tag">RSA · ECC</span>
+        <h3>Quantum Readiness</h3>
+        <p>Harvest-now-decrypt-later risk today, plus a forced migration off RSA and ECC ahead. The assessment shows which assets are quantum-vulnerable, which protect your most sensitive data, and where you're locked into algorithms you can't swap without a rebuild.</p>
+      </article>
+      <article class="clock-card reveal" style="--d:.1s">
+        <div class="dial" style="--t:2.5s" aria-hidden="true"><i class="m"></i><i></i><b></b></div>
+        <span class="clock-tag">47 days</span>
+        <h3>47-Day Certificate Readiness</h3>
+        <p>TLS lifetimes are shrinking in stages, down to 47 days. The assessment shows your renewal method per asset, how many still need a human, and your real renewal volume once 47 days hits, usually the number that changes the internal conversation.</p>
+      </article>
+      <article class="clock-card reveal" style="--d:.2s">
+        <div class="dial" style="--t:7s" aria-hidden="true"><i class="m"></i><i></i><b></b></div>
+        <span class="clock-tag">2027&ndash;2035</span>
+        <h3>Compliance Deadlines (US &amp; Canada)</h3>
+        <p>Federal, national security, and sector mandates, all converging on 2027&ndash;2035. The assessment shows which mandates apply to you, which systems fall in scope, and whether your timeline holds up.</p>
+      </article>
+      <article class="clock-card reveal" style="--d:.3s">
+        <div class="dial" style="--t:5s" aria-hidden="true"><i class="m"></i><i></i><b></b></div>
+        <span class="clock-tag">On demand</span>
+        <h3>Audit &amp; Governance Readiness</h3>
+        <p>Proving your posture on demand, not reconstructing it during an audit. The assessment shows policy gaps, exceptions, and where no one owns the record.</p>
+      </article>
+    </div>
+    <div class="clocks-foot reveal"><a href="#" class="text-link">View the full compliance timeline <svg><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+<!-- ================= 5. REMEDIATION ================= -->
+<section class="section" aria-labelledby="rem-title">
+  <div class="wrap rem-grid">
+    <div class="rem-copy reveal">
+      <span class="eyebrow">Remediation</span>
+      <h2 class="h2" id="rem-title">Findings Don't Fix Themselves</h2>
+      <p class="lead">An assessment tells you what's wrong and in what order. Remediation is where that roadmap becomes actual work: migrating certificate authorities, rotating exposed keys, replacing weak algorithms, standing up the governance and controls that keep the same gaps from reappearing. This isn't handed to your team as homework. Accutive's engineers execute it.</p>
+      <span class="badge-eng"><svg><use href="#i-tool"/></svg>Executed by Accutive engineers</span>
+    </div>
+
+    <div class="terminal reveal" style="--d:.15s" data-fixes aria-hidden="true">
+      <div class="console-bar"><i></i><i></i><i></i><span>remediation-roadmap.run</span></div>
+      <div class="fixes">
+        <div class="fix"><span class="st">!</span><div><span class="from"><s>Legacy CA still issuing certs</s></span><span class="to">&#8627; migrated to new CA hierarchy</span></div><span class="lbl">migrate CA</span></div>
+        <div class="fix"><span class="st">!</span><div><span class="from"><s>API key exposed in pipeline config</s></span><span class="to">&#8627; rotated &amp; moved to vault</span></div><span class="lbl">rotate key</span></div>
+        <div class="fix"><span class="st">!</span><div><span class="from"><s>RSA-1024 / SHA-1 in billing app</s></span><span class="to">&#8627; replaced with approved algorithms</span></div><span class="lbl">replace algorithm</span></div>
+        <div class="fix"><span class="st">!</span><div><span class="from"><s>Orphaned shadow CA, no owner</s></span><span class="to">&#8627; owner assigned, policy enforced</span></div><span class="lbl">governance</span></div>
+        <div class="fix"><span class="st">!</span><div><span class="from"><s>Manual renewals, no alerting</s></span><span class="to">&#8627; controls in place, gap closed</span></div><span class="lbl">controls</span></div>
+      </div>
+      <div class="terminal-foot"><span>findings resolved</span><b><span data-fixed>0</span> / 5</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. FROM ASSESSMENT TO AUTOMATION ================= -->
+<section class="section auto" aria-labelledby="auto-title">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">From Assessment to Automation</span>
+      <h2 class="h2" id="auto-title">A Finding Isn't a Fix. Automation Is.</h2>
+      <p class="lead">Discovery uncovers the problem. Automation is what stops it from coming back in six months.</p>
+    </div>
+
+    <!-- Parallel, not sequential: three independent cards -->
+    <div class="auto-wrap">
+      <div class="auto-loop" aria-hidden="true"><i></i></div>
+      <article class="auto-card reveal" style="--d:0s">
+        <svg class="bg" aria-hidden="true"><use href="#i-radar"/></svg>
+        <span class="ic spin"><svg><use href="#i-radar"/></svg></span>
+        <h3>Continuous Discovery</h3>
+        <p>Your inventory stays current, not just accurate the day it was built.</p>
+      </article>
+      <article class="auto-card reveal" style="--d:.12s">
+        <svg class="bg" aria-hidden="true"><use href="#i-cycle"/></svg>
+        <span class="ic spin"><svg><use href="#i-cycle"/></svg></span>
+        <h3>Lifecycle Automation</h3>
+        <p>Issuance, renewal, revocation, and rotation, no ticket required.</p>
+      </article>
+      <article class="auto-card reveal" style="--d:.24s">
+        <svg class="bg" aria-hidden="true"><use href="#i-shield"/></svg>
+        <span class="ic"><svg><use href="#i-shield"/></svg></span>
+        <h3>Policy Enforcement</h3>
+        <p>Non-compliant assets get flagged or blocked at issuance, not after.</p>
+      </article>
+    </div>
+
+    <div class="auto-close reveal">
+      <p>Compliance reporting stops being a quarterly scramble. It becomes a byproduct of how the system already runs.</p>
+      <p class="handoff">The assessment tells you what to fix, and in what order. Next: what you run it on. <svg><use href="#i-down"/></svg></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. THE PLATFORM ================= -->
+<section class="section dark on-dark" aria-labelledby="plat-title">
+  <div class="wrap">
+    <div class="platform-head reveal">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#cbb8ff">Entrust Cryptographic Security Platform</span>
+        <h2 class="h2" id="plat-title">One Platform. Every Layer of Cryptographic Control.</h2>
+        <p class="lead">Entrust unifies PKI, certificate lifecycle management, key and secrets management, and HSMs into a single system.</p>
+      </div>
+      <img src="assets/logo-entrust.png" alt="Entrust" width="191" height="64" />
+    </div>
+
+    <!-- Six parallel benefits around the platform stack -->
+    <div class="platform">
+      <ul class="benefits">
+        <li class="benefit reveal"><span class="ic"><svg><use href="#i-layers"/></svg></span><div><h3>Centralized Control</h3><p>PKI, HSMs, and crypto lifecycle in one platform, less sprawl.</p></div></li>
+        <li class="benefit reveal" style="--d:.08s"><span class="ic"><svg><use href="#i-cycle"/></svg></span><div><h3>Automated Lifecycle &amp; Policy</h3><p>Discovery, renewal, and enforcement, without a manual step.</p></div></li>
+        <li class="benefit reveal" style="--d:.16s"><span class="ic"><svg><use href="#i-alert"/></svg></span><div><h3>Reduced Operational Risk</h3><p>Catch expiring or misconfigured assets before an outage hits.</p></div></li>
+      </ul>
+      <div class="stack reveal" aria-hidden="true">
+        <div class="layer">PKI &amp; CLM</div>
+        <div class="layer">Keys &amp; Secrets</div>
+        <div class="layer">Compliance</div>
+        <div class="layer">HSM Root of Trust</div>
+        <span class="label">Entrust Platform</span>
+      </div>
+      <ul class="benefits right">
+        <li class="benefit reveal"><span class="ic"><svg><use href="#i-atom"/></svg></span><div><h3>Post-Quantum Readiness</h3><p>Crypto-agility built in, ready for the algorithm transition.</p></div></li>
+        <li class="benefit reveal" style="--d:.08s"><span class="ic"><svg><use href="#i-audit"/></svg></span><div><h3>Governance &amp; Audit Confidence</h3><p>Prove your posture on demand, not after the fact, always.</p></div></li>
+        <li class="benefit reveal" style="--d:.16s"><span class="ic"><svg><use href="#i-plug"/></svg></span><div><h3>Interoperability at Scale</h3><p>Connects into the identity and IT stack you already run.</p></div></li>
+      </ul>
+    </div>
+
+    <div class="modules reveal">
+      <h3>What's Inside</h3>
+      <ul class="module-list">
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>PKI &amp; Certificate Lifecycle Management</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Certificate Manager for Enterprise Certificate Visibility and Automation</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Key &amp; Secrets Lifecycle Management</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Agentless File-Level Data Encryption</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Compliance Manager for Policy Control</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>FIPS 140-3 HSM Root of Trust, On-Prem or Cloud</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>HSM Manager for Distributed nShield Estates</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- ================= 8. WHY ACCUTIVE ================= -->
+<section class="section" aria-labelledby="why-title">
+  <div class="wrap why-grid">
+    <div class="year reveal" data-year aria-hidden="true"><b>2009</b><small>Founded &middot; North America</small></div>
+    <div class="why-copy reveal" style="--d:.12s">
+      <span class="eyebrow">Why Accutive Security</span>
+      <h2 class="h2" id="why-title">Why Accutive Security</h2>
+      <p class="lead">Founded in 2009, Accutive Security has completed hundreds of PKI implementations for some of North America's most impactful organizations. As a certified Entrust partner, we go beyond reselling, with active delivery relationships across advisory, implementation, integration, and migration for nShield HSM environments specifically. Every assessment runs through our Innovation Lab, so issues get caught and resolved before they ever reach your environment.</p>
+      <div class="creds">
+        <div class="cred"><span class="ic"><svg><use href="#i-pki"/></svg></span><b>Hundreds of PKI implementations</b></div>
+        <div class="cred"><span class="ic"><svg><use href="#i-handshake"/></svg></span><b>Certified Entrust partner</b></div>
+        <div class="cred"><span class="ic"><svg><use href="#i-lab"/></svg></span><b>Every assessment runs through our Innovation Lab</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 9. CLOSING CTA ================= -->
+<section class="section" id="book" aria-labelledby="cta-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <div>
+        <h2 class="h2" id="cta-title">Ready to See Your Full Exposure?</h2>
+        <a href="#" class="btn btn-primary">Book an Expert-Led Assessment <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="cta-list">
+        <h3>Every assessment includes</h3>
+        <ul>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>A complete inventory of your cryptographic assets, enterprise-wide</li>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>Readiness scored against quantum, certificate, regulatory, and audit risk</li>
+          <li><span class="tick"><svg><use href="#i-check"/></svg></span>A prioritized remediation roadmap ready for leadership review</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER (Figma footer, condensed) ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-cards">
+      <div class="foot-card"><img src="assets/logo-accutive-white.svg" alt="Accutive Security" width="112" height="36" /><p>Cryptography, Data Protection and Identity Security Center of Excellence</p></div>
+      <div class="foot-card"><h3>Stay In Touch</h3>
+        <a class="foot-row" href="mailto:letstalk@accutive.com"><svg><use href="#i-mail"/></svg>letstalk@accutive.com</a>
+        <a class="foot-row" href="tel:+18886668315"><svg><use href="#i-phone"/></svg>+1.888.666.8315</a></div>
+      <div class="foot-card"><h3>Corporate Mailing Address</h3><p class="foot-row"><svg><use href="#i-pin"/></svg><span>27068 La Paz Road Suite 245<br />Aliso Viejo, CA 92656</span></p></div>
+      <div class="foot-card"><h3>Accutive Security Canada</h3><p class="foot-row"><svg><use href="#i-pin"/></svg><span>2912 W Broadway, Suite 131<br />Vancouver, BC</span></p></div>
+    </div>
+    <div class="foot-bottom">
+      <nav aria-label="Legal"><a href="#">Terms and Conditions</a><span></span><a href="#">Privacy Policy</a><span></span><a href="#">Cookie Preferences</a></nav>
+      <p>Copyright &copy; 2026 Accutive Security. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="acs.js"></script>
+</body>
+</html>
