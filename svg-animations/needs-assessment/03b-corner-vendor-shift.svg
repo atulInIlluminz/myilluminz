@@ -1,6 +1,8 @@
-<svg viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg" width="126" height="126" role="img"><title>Card corner watermark</title><style><![CDATA[
+<svg viewBox="57 0 68 125" fill="none" xmlns="http://www.w3.org/2000/svg" width="68" height="125" role="img"><title>Card corner watermark</title><style><![CDATA[
 svg > g{transform-box:view-box;transform-origin:100% 0;animation:bob 7s ease-in-out infinite;transition:opacity .6s,scale .8s cubic-bezier(.22,.8,.24,1),rotate .8s}
 svg:hover > g{opacity:.12;scale:1.12;rotate:-6deg}
 @keyframes bob{0%,100%{translate:0 0}50%{translate:-4px 6px}}
 @media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+
+
 ]]></style><g id="b2-hugeicons-move-top" opacity="0.03"><path id="b2-vector" d="M93 -44.5V33M93 -44.5C88.65 -44.5 85.33 -41.10 78.71 -34.31L65.87 -21.48M93 -44.5C97.36 -44.5 100.67 -41.10 107.29 -34.31L120.13 -21.48M93 64C80.15 64 69.75 74.40 69.75 87.25C69.75 100.09 80.15 110.5 93 110.5C105.84 110.5 116.25 100.09 116.25 87.25C116.25 74.40 105.84 64 93 64Z" stroke="#6943C7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g></svg>

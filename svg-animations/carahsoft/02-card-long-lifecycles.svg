@@ -1,4 +1,4 @@
-<svg viewBox="0 0 567 355" fill="none" xmlns="http://www.w3.org/2000/svg" width="567" height="355" role="img"><title>Long system lifecycles (click to replay)</title><style><![CDATA[
+<svg viewBox="0 0 567 355" fill="none" xmlns="http://www.w3.org/2000/svg" width="567" height="355" role="img"><title>Long system lifecycles</title><style><![CDATA[
 :is(g,path,circle,ellipse,line,rect,polygon):not([transform]):not(clipPath *):not(mask *){transform-box:fill-box;transform-origin:center}
 svg{cursor:pointer}
 #c1-vector {stroke-dasharray: 640; stroke-dashoffset: 640; transition: stroke-width .3s; }
@@ -26,6 +26,8 @@ svg:hover #c1-vector {stroke-width: 7; }
 @keyframes spin { 0%, 40% { rotate: 0deg; } 100% { rotate: 360deg; } }
 @keyframes march { to { stroke-dashoffset: -16; } }
 @media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+
+
 ]]></style>
 <g id="c1-frame-1618875153">
 <rect width="567" height="355" rx="10" fill="#FCFAFF"/>
@@ -48,7 +50,4 @@ svg:hover #c1-vector {stroke-width: 7; }
 <path id="c1-vector-12" d="M516 101.582L536.516 116L516 130.418V101.582Z" fill="#6142BC"/>
 </g>
 </g>
-<script><![CDATA[
-(()=>{const svg=document.documentElement;
-function replay(){document.getAnimations().forEach(a=>{a.currentTime=0;a.play()});if(svg.setCurrentTime)svg.setCurrentTime(0)}svg.addEventListener('click',replay);})();
-]]></script></svg>
+</svg>
