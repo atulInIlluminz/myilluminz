@@ -1,10 +1,12 @@
-<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60" role="img"><title>icon vendor shift icon</title><style><![CDATA[
-path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.22,.8,.24,1) forwards .15s}
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60" role="img"><title>icon vendor shift icon</title><style>
+path{stroke-dasharray:var(--L);stroke-dashoffset:var(--L);animation:draw 1.4s cubic-bezier(.22,.8,.24,1) forwards .15s}
 svg{cursor:pointer}
 svg:hover path{animation:redraw 1s cubic-bezier(.22,.8,.24,1)}
-@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
-@keyframes redraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes draw{from{stroke-dashoffset:var(--L)}to{stroke-dashoffset:0}}
+@keyframes redraw{from{stroke-dashoffset:var(--L)}to{stroke-dashoffset:0}}
 @media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
 
 
-]]></style><g id="r2-background"><rect width="60" height="60" rx="8" fill="#3E0EB7" fill-opacity="0.08"/><g id="r2-hugeicons-move-top"><path id="r2-vector" pathLength="1" d="M29.99 11.66V30M29.99 11.66C28.97 11.66 28.18 12.46 26.62 14.07L23.58 17.11M29.99 11.66C31.03 11.66 31.81 12.46 33.38 14.07L36.41 17.11M29.99 37.33C26.96 37.33 24.49 39.79 24.49 42.83C24.49 45.87 26.96 48.33 29.99 48.33C33.03 48.33 35.49 45.87 35.49 42.83C35.49 39.79 33.03 37.33 29.99 37.33Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
+
+#r2-vector{--L:70.01}
+</style><g id="r2-background"><rect width="60" height="60" rx="8" fill="#3E0EB7" fill-opacity="0.08"/><g id="r2-hugeicons-move-top"><path id="r2-vector" d="M29.99 11.66V30M29.99 11.66C28.97 11.66 28.18 12.46 26.62 14.07L23.58 17.11M29.99 11.66C31.03 11.66 31.81 12.46 33.38 14.07L36.41 17.11M29.99 37.33C26.96 37.33 24.49 39.79 24.49 42.83C24.49 45.87 26.96 48.33 29.99 48.33C33.03 48.33 35.49 45.87 35.49 42.83C35.49 39.79 33.03 37.33 29.99 37.33Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>

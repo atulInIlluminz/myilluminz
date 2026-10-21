@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1232 743" fill="none" xmlns="http://www.w3.org/2000/svg" width="1232" height="743" role="img"><title>One inventory, many frameworks</title><style><![CDATA[
+<svg viewBox="0 0 1232 743" fill="none" xmlns="http://www.w3.org/2000/svg" width="1232" height="743" role="img"><title>One inventory, many frameworks</title><style>
 :is(g,path,circle,ellipse,line,rect,polygon):not([transform]):not(clipPath *):not(mask *){transform-box:fill-box;transform-origin:center}
 text{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
 .link{fill:none;stroke:#a59aff;stroke-width:2;stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1.2s cubic-bezier(.22,1,.36,1) forwards;transition:stroke .3s,stroke-width .3s}
@@ -60,7 +60,13 @@ text{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
 .mv4{animation:mv4m 2.4s linear -1.5s infinite both}
 @keyframes mv5m{0%{translate:0.00px 265.00px}2.778%{translate:9.74px 266.43px}5.556%{translate:18.70px 270.51px}8.333%{translate:26.51px 276.52px}11.111%{translate:33.23px 283.75px}13.889%{translate:39.08px 291.70px}16.667%{translate:44.26px 300.11px}19.444%{translate:48.93px 308.81px}22.222%{translate:53.21px 317.71px}25%{translate:57.18px 326.75px}27.778%{translate:60.92px 335.89px}30.556%{translate:64.47px 345.11px}33.333%{translate:67.89px 354.37px}36.111%{translate:71.19px 363.68px}38.889%{translate:74.42px 373.01px}41.667%{translate:77.61px 382.36px}44.444%{translate:80.77px 391.72px}47.222%{translate:83.92px 401.08px}50%{translate:87.10px 410.43px}52.778%{translate:90.32px 419.77px}55.556%{translate:93.60px 429.08px}58.333%{translate:96.97px 438.36px}61.111%{translate:100.46px 447.60px}63.889%{translate:104.09px 456.79px}66.667%{translate:107.88px 465.91px}69.444%{translate:111.90px 474.93px}72.222%{translate:116.16px 483.84px}75%{translate:120.73px 492.59px}77.778%{translate:125.66px 501.15px}80.556%{translate:131.04px 509.43px}83.333%{translate:136.95px 517.34px}86.111%{translate:143.49px 524.74px}88.889%{translate:150.76px 531.41px}91.667%{translate:158.82px 537.10px}94.444%{translate:167.69px 541.42px}97.222%{translate:177.18px 544.10px}100%{translate:187.00px 545.00px}}
 .mv5{animation:mv5m 2.4s linear -2.0s infinite both}
-]]></style><g transform="translate(232 120)">
+
+.fx0{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+.fx1{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+.fx2{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+.fx3{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+.fx4{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+</style><g transform="translate(232 120)">
 <path id="sl-0" class="link link-0" d="M0 265C82 265 86 1 187 1"/><path id="sl-1" class="link link-1" d="M0 265C89 265 88 145 187 145"/>
 <path id="sl-2" class="link link-2" d="M0 265C76 265 96 286 187 286"/><path id="sl-3" class="link link-3" d="M0 265C87 265 91 417 187 417"/>
 <path id="sl-4" class="link link-4" d="M0 265C81 265 84 545 187 545"/><circle class="mv1 packet" r="4"/><circle class="mv2 packet" r="4"/><circle class="mv3 packet" r="4"/><circle class="mv4 packet" r="4"/><circle class="mv5 packet" r="4"/></g><circle class="endpoint ep-0" cx="418.5" cy="120" r="5.5"/><circle class="endpoint ep-1" cx="418.5" cy="264" r="5.5"/><circle class="endpoint ep-2" cx="418.5" cy="405" r="5.5"/><circle class="endpoint ep-3" cx="418.5" cy="536" r="5.5"/><circle class="endpoint ep-4" cx="418.5" cy="664" r="5.5"/><svg x="0" y="231" width="308" height="307" viewBox="0 0 308 307" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,93 +94,38 @@ text{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
 </radialGradient>
 </defs>
 </svg><g class="sector s0"><rect class="card" x="423" y="10" width="809" height="179" rx="14"/><g class="icon"><svg x="431" y="59.5" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#si0-filter0-d-4382-968)">
+<g class="fx0">
 <rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
 <path d="M38.4762 24.0444H40M40 24.0444H41.5238M40 24.0444V22.5333M40 24.0444V25.5556M50.75 32.75V44.25M43.75 32.75V44.25M36.75 32.75L36.75 44.25M29.75 32.75L29.75 44.25M24.7619 27.8222L40 18L55.2381 27.8222V30.0889H24.7619V27.8222ZM26.2857 46.7111H53.7143V49.7333H56V52H24V49.7333H26.2857V46.7111Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
 </g>
-<defs>
-<filter id="si0-filter0-d-4382-968" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="5"/>
-<feGaussianBlur stdDeviation="5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.556863 0 0 0 0 0.462745 0 0 0 0 0.847059 0 0 0 0.0392157 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4382_968"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4382_968" result="shape"/>
-</filter>
-</defs>
+
 </svg>
 </g><text class="ttl"><tspan x="523" y="105.5">Federal civilian</tspan></text><line x1="783" y1="26" x2="783" y2="173" stroke="#EBE5FF"/><text class="lbl" x="797" y="58.5">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="797.0" y="66.5" width="94.6" height="22" rx="11"/><text x="844.3" y="81.5" text-anchor="middle">OMB M–26–15</text></g><g class="fw"><rect x="897.6" y="66.5" width="101.2" height="22" rx="11"/><text x="948.2" y="81.5" text-anchor="middle">NIST IR 8547</text></g><g class="fw"><rect x="1004.8" y="66.5" width="88.0" height="22" rx="11"/><text x="1048.8" y="81.5" text-anchor="middle">FIPS 140–3</text></g><g class="fw"><rect x="797.0" y="94.5" width="167.2" height="22" rx="11"/><text x="880.6" y="109.5" text-anchor="middle">FIPS 203, 204, and 205</text></g><g class="fw"><rect x="970.2" y="94.5" width="114.4" height="22" rx="11"/><text x="1027.4" y="109.5" text-anchor="middle">NIST SP 800–53</text></g><g class="fw"><rect x="1090.6" y="94.5" width="55.0" height="22" rx="11"/><text x="1118.1" y="109.5" text-anchor="middle">FISMA</text></g><g class="fw"><rect x="797.0" y="122.5" width="68.2" height="22" rx="11"/><text x="831.1" y="137.5" text-anchor="middle">FedRAMP</text></g></g><g class="sector s1"><rect class="card" x="423" y="206" width="809" height="122" rx="14"/><g class="icon"><svg x="431" y="227.0" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#si1-filter0-d-4382-945)">
+<g class="fx1">
 <rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
 <path d="M39.9678 17.875C44.5002 20.8088 49.0517 22.3469 54.25 23.1543V33.5322C54.2499 43.2424 48.3676 49.298 40 53.1719C31.6324 49.298 25.7501 43.2424 25.75 33.5322V23.1396C30.2534 22.3251 34.7789 20.7808 39.9678 17.875Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
 </g>
-<defs>
-<filter id="si1-filter0-d-4382-945" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="5"/>
-<feGaussianBlur stdDeviation="5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.556863 0 0 0 0 0.462745 0 0 0 0 0.847059 0 0 0 0.0392157 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4382_945"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4382_945" result="shape"/>
-</filter>
-</defs>
+
 </svg>
 </g><text class="ttl"><tspan x="523" y="262.0">Defense and defense</tspan><tspan x="523" y="284.0">industrial base</tspan></text><line x1="783" y1="222" x2="783" y2="312" stroke="#EBE5FF"/><text class="lbl" x="797" y="254.0">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="797.0" y="262.0" width="74.8" height="22" rx="11"/><text x="834.4" y="277.0" text-anchor="middle">CNSA 2.0</text></g><g class="fw"><rect x="877.8" y="262.0" width="48.4" height="22" rx="11"/><text x="902.0" y="277.0" text-anchor="middle">CMMC</text></g><g class="fw"><rect x="932.2" y="262.0" width="121.0" height="22" rx="11"/><text x="992.7" y="277.0" text-anchor="middle">NIST SP 800–171</text></g></g><g class="sector s2"><rect class="card" x="423" y="346" width="809" height="121" rx="14"/><g class="icon"><svg x="431" y="366.5" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#si2-filter0-d-4382-930)">
+<g class="fx2">
 <rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
 <path d="M24 36.6875H56M26.1818 36.6875V51.5417M53.8182 36.6875V51.5417M24 52H56M29.8182 35.9583V32.3125C29.8182 26.4792 34.1818 22.8333 40 22.8333C45.8182 22.8333 50.1818 26.4792 50.1818 32.3125V35.9583M33.6727 31.5833H46.6182M37.8182 22.1042V19.1875C37.8182 16.2708 42.1818 16.2708 42.1818 19.1875V22.1042M29.9818 40.0625V46.625M36.5273 40.0625V46.625M43.0727 40.0625V46.625M49.6182 40.0625V46.625M28.3636 49.5417H51.3455" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
 </g>
-<defs>
-<filter id="si2-filter0-d-4382-930" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="5"/>
-<feGaussianBlur stdDeviation="5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.556863 0 0 0 0 0.462745 0 0 0 0 0.847059 0 0 0 0.0392157 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4382_930"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4382_930" result="shape"/>
-</filter>
-</defs>
+
 </svg>
 </g><text class="ttl"><tspan x="523" y="401.5">State and local</tspan><tspan x="523" y="423.5">government</tspan></text><line x1="783" y1="362" x2="783" y2="451" stroke="#EBE5FF"/><text class="lbl" x="797" y="393.5">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="797.0" y="401.5" width="147.4" height="22" rx="11"/><text x="870.7" y="416.5" text-anchor="middle">CJS Security Policy</text></g><g class="fw"><rect x="950.4" y="401.5" width="206.8" height="22" rx="11"/><text x="1053.8" y="416.5" text-anchor="middle">GovRAMP (formerly StateRAMP)</text></g></g><g class="sector s3"><rect class="card" x="423" y="484" width="809" height="116" rx="14"/><g class="icon"><svg x="431" y="502.0" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#si3-filter0-d-4382-917)">
+<g class="fx3">
 <rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
 <path d="M43.0195 22.8555C44.9029 21.1137 46.8236 20.5759 48.4932 20.7979C50.1814 21.0224 51.7193 22.0378 52.7861 23.5986C54.9045 26.698 55.1371 31.9564 50.6719 36.8594L40 47.9189L29.3271 36.8594C24.8624 31.9565 25.0956 26.6979 27.2139 23.5986C28.2807 22.0378 29.8186 21.0224 31.5068 20.7979C33.1762 20.5759 35.0963 21.114 36.9795 22.8555L39.4453 25.5615C39.5874 25.7175 39.789 25.8066 40 25.8066C40.211 25.8066 40.4126 25.7175 40.5547 25.5615L43.0195 22.8555Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<defs>
-<filter id="si3-filter0-d-4382-917" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="5"/>
-<feGaussianBlur stdDeviation="5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.556863 0 0 0 0 0.462745 0 0 0 0 0.847059 0 0 0 0.0392157 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4382_917"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4382_917" result="shape"/>
-</filter>
-</defs>
+
 </svg>
 </g><text class="ttl"><tspan x="523" y="548.0">Healthcare</tspan></text><line x1="783" y1="500" x2="783" y2="584" stroke="#EBE5FF"/><text class="lbl" x="797" y="529.0">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="797.0" y="537.0" width="147.4" height="22" rx="11"/><text x="870.7" y="552.0" text-anchor="middle">HIPAA Security Rule</text></g></g><g class="sector s4"><rect class="card" x="423" y="617" width="809" height="121" rx="14"/><g class="icon"><svg x="431" y="637.5" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#si4-filter0-d-4382-907)">
+<g class="fx4">
 <rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
 <path d="M25.2725 21.75H54.7275C55.7014 21.75 56.2941 21.9949 56.6494 22.3525C57.0056 22.7111 57.25 23.3104 57.25 24.2939V45.7061C57.25 46.6896 57.0056 47.2889 56.6494 47.6475C56.2941 48.0051 55.7014 48.25 54.7275 48.25H25.2725C24.2986 48.25 23.7059 48.0051 23.3506 47.6475C22.9944 47.2889 22.75 46.6896 22.75 45.7061V24.2939L22.7607 23.9434C22.8123 23.1645 23.0388 22.6664 23.3506 22.3525C23.7059 21.9949 24.2986 21.75 25.2725 21.75Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
 </g>
-<defs>
-<filter id="si4-filter0-d-4382-907" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="5"/>
-<feGaussianBlur stdDeviation="5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.556863 0 0 0 0 0.462745 0 0 0 0 0.847059 0 0 0 0.0392157 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4382_907"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4382_907" result="shape"/>
-</filter>
-</defs>
+
 </svg>
 </g><text class="ttl"><tspan x="523" y="672.5">Payments and revenue</tspan><tspan x="523" y="694.5">systems</tspan></text><line x1="783" y1="633" x2="783" y2="722" stroke="#EBE5FF"/><text class="lbl" x="797" y="664.5">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="797.0" y="672.5" width="101.2" height="22" rx="11"/><text x="847.6" y="687.5" text-anchor="middle">PCI DSS v4.0</text></g></g></svg>

@@ -1,4 +1,4 @@
-<svg viewBox="0 0 567 355" fill="none" xmlns="http://www.w3.org/2000/svg" width="567" height="355" role="img"><title>Estates built program by program</title><style><![CDATA[
+<svg viewBox="0 0 567 355" fill="none" xmlns="http://www.w3.org/2000/svg" width="567" height="355" role="img"><title>Estates built program by program</title><style>
 :is(g,path,circle,ellipse,line,rect,polygon):not([transform]):not(clipPath *):not(mask *){transform-box:fill-box;transform-origin:center}
 svg{cursor:pointer}
 .win {opacity: 0; transition: transform .5s cubic-bezier(.22,1,.36,1); }
@@ -27,7 +27,9 @@ svg:hover #c2-win-3 {transform: translateY(-6px); transition-delay: .12s; }
 @media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
 
 
-]]></style>
+
+
+</style>
 <g id="c2-frame-1618875154">
 <g clip-path="url(#c2-clip0-4382-395)">
 <rect width="567" height="355" rx="10" fill="#FCFAFF"/>
