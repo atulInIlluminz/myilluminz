@@ -1,0 +1,43 @@
+<svg viewBox="0 0 567 355" fill="none" xmlns="http://www.w3.org/2000/svg" width="567" height="355" role="img"><title>Validation is mandatory (click to replay)</title><style><![CDATA[
+:is(g,path,circle,ellipse,line,rect,polygon):not([transform]):not(clipPath *):not(mask *){transform-box:fill-box;transform-origin:center}
+svg{cursor:pointer}
+#c3-vector, #c3-group-1321315488, #c3-frame-1618875737 {opacity: 0; }
+#c3-vector {animation: c3-halo .9s cubic-bezier(.22,1,.36,1) forwards, c3-pulse 3.2s ease-in-out 1s infinite; }
+#c3-group-1321315488 {animation: c3-drop .8s cubic-bezier(.34,1.56,.64,1) .2s forwards; }
+#c3-vector-3 {stroke-dasharray: 70; stroke-dashoffset: 70; }
+#c3-vector-3 {animation: draw .6s cubic-bezier(.22,1,.36,1) .75s forwards; }
+#c3-frame-1618875737 {animation: c3-badge .6s cubic-bezier(.34,1.56,.64,1) 1s forwards, c3-float 3s ease-in-out 1.6s infinite; }
+#c3-group-1321315488 {transition: transform .5s cubic-bezier(.22,1,.36,1); }
+svg:hover #c3-group-1321315488 {transform: rotate(-4deg) scale(1.04); }
+svg:hover #c3-vector-3 {animation: redraw .6s cubic-bezier(.22,1,.36,1) forwards; }
+svg:hover #c3-frame-1618875737 {animation: wiggle .6s ease-in-out; opacity: 1; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes c3-halo { from { opacity: 0; scale: .6; } to { opacity: 1; scale: 1; } }
+@keyframes c3-pulse { 50% { scale: 1.06; } }
+@keyframes c3-drop { from { opacity: 0; translate: 0 -26px; } to { opacity: 1; translate: 0 0; } }
+@keyframes c3-badge { from { opacity: 0; scale: .4; } to { opacity: 1; scale: 1; } }
+@keyframes c3-float { 50% { translate: 0 -5px; } }
+@keyframes redraw { from { stroke-dashoffset: 70; } to { stroke-dashoffset: 0; } }
+@keyframes wiggle { 25% { rotate: -6deg; } 75% { rotate: 6deg; } }
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+]]></style>
+<g id="c3-frame-1618875153">
+<rect width="567" height="355" rx="10" fill="#FCFAFF"/>
+<path id="c3-v" opacity="0.02" fill-rule="evenodd" clip-rule="evenodd" d="M105.428 295.285L107.932 324.414C108.127 326.69 110.597 328.312 113.294 327.163L465.683 143.732C468.38 142.583 469.957 139.238 469.722 136.507C469.448 133.321 467.363 130.749 464.47 129.622L209.526 47.9094C207.134 47.1978 204.515 49.257 204.711 51.5328L207.215 80.6626C207.371 82.4832 207.951 83.8089 208.994 85.0949L208.029 84.7192C208.029 84.7192 208.492 84.6795 208.994 85.0949C210.036 86.3808 211.04 87.2116 212.466 87.5475L216.285 88.5949C234.34 98.0475 274.275 123.502 278.258 164.426C278.258 164.426 293.568 136.516 265.074 103.201L396.129 142.374L109.35 286.694C106.692 288.298 104.614 291.228 104.887 294.414L105.428 295.285Z" fill="#2D097D"/>
+<g id="c3-group-1321315489">
+<path id="c3-vector" d="M280 285C339.094 285 387 237.094 387 178C387 118.906 339.094 71 280 71C220.906 71 173 118.906 173 178C173 237.094 220.906 285 280 285Z" fill="#7F5FD9" fill-opacity="0.1"/>
+<g id="c3-group-1321315488">
+<path id="c3-vector-2" d="M279.734 110L337.788 131.371V174.114C337.788 209.086 313.599 234.343 279.734 246C245.869 234.343 221.68 209.086 221.68 174.114V131.371L279.734 110Z" fill="#6038B5"/>
+<path id="c3-vector-3" d="M256.512 178L271.993 193.543L302.955 162.457" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="c3-frame-1618875737">
+<rect x="326" y="80" width="69" height="30" rx="15" fill="white"/>
+<rect x="326" y="80" width="69" height="30" rx="15" stroke="#6943C7"/>
+<path id="c3-fips" d="M352.289 89.832V91.64H347.633V94.504H351.201V96.28H347.633V101H345.393V89.832H352.289ZM356.117 89.832V101H353.877V89.832H356.117ZM366.475 93.288C366.475 93.8853 366.331 94.4453 366.043 94.968C365.765 95.4907 365.323 95.912 364.715 96.232C364.117 96.552 363.36 96.712 362.443 96.712H360.571V101H358.331V89.832H362.443C363.307 89.832 364.043 89.9813 364.651 90.28C365.259 90.5787 365.712 90.9893 366.011 91.512C366.32 92.0347 366.475 92.6267 366.475 93.288ZM362.347 94.904C362.965 94.904 363.424 94.7653 363.723 94.488C364.021 94.2 364.171 93.8 364.171 93.288C364.171 92.2 363.563 91.656 362.347 91.656H360.571V94.904H362.347ZM371.921 101.112C371.142 101.112 370.438 100.979 369.809 100.712C369.19 100.445 368.7 100.061 368.337 99.56C367.974 99.0587 367.788 98.4667 367.777 97.784H370.177C370.209 98.2427 370.369 98.6053 370.657 98.872C370.956 99.1387 371.361 99.272 371.873 99.272C372.396 99.272 372.806 99.1493 373.105 98.904C373.404 98.648 373.553 98.3173 373.553 97.912C373.553 97.5813 373.452 97.3093 373.249 97.096C373.046 96.8827 372.79 96.7173 372.481 96.6C372.182 96.472 371.766 96.3333 371.233 96.184C370.508 95.9707 369.916 95.7627 369.457 95.56C369.009 95.3467 368.62 95.032 368.289 94.616C367.969 94.1893 367.809 93.624 367.809 92.92C367.809 92.2587 367.974 91.6827 368.305 91.192C368.636 90.7013 369.1 90.328 369.697 90.072C370.294 89.8053 370.977 89.672 371.745 89.672C372.897 89.672 373.83 89.9547 374.545 90.52C375.27 91.0747 375.67 91.8533 375.745 92.856H373.281C373.26 92.472 373.094 92.1573 372.785 91.912C372.486 91.656 372.086 91.528 371.585 91.528C371.148 91.528 370.796 91.64 370.529 91.864C370.273 92.088 370.145 92.4133 370.145 92.84C370.145 93.1387 370.241 93.3893 370.433 93.592C370.636 93.784 370.881 93.944 371.169 94.072C371.468 94.1893 371.884 94.328 372.417 94.488C373.142 94.7013 373.734 94.9147 374.193 95.128C374.652 95.3413 375.046 95.6613 375.377 96.088C375.708 96.5147 375.873 97.0747 375.873 97.768C375.873 98.3653 375.718 98.92 375.409 99.432C375.1 99.944 374.646 100.355 374.049 100.664C373.452 100.963 372.742 101.112 371.921 101.112Z" fill="#2D097D"/>
+</g>
+</g>
+<script><![CDATA[
+(()=>{const svg=document.documentElement;
+function replay(){document.getAnimations().forEach(a=>{a.currentTime=0;a.play()});if(svg.setCurrentTime)svg.setCurrentTime(0)}svg.addEventListener('click',replay);})();
+]]></script></svg>

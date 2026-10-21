@@ -1,0 +1,8 @@
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60" role="img"><title>icon data protection icon (hover to redraw)</title><style><![CDATA[
+path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.22,.8,.24,1) forwards .15s}
+svg{cursor:pointer}
+svg:hover path{animation:redraw 1s cubic-bezier(.22,.8,.24,1)}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes redraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+]]></style><g id="c2-icon"><rect width="60" height="60" rx="8" fill="#3E0EB7" fill-opacity="0.08"/><g id="c2-frame"><path id="c2-vector" pathLength="1" d="M41.66 18.33C41.66 21.09 35.69 23.33 28.33 23.33C20.96 23.33 15 21.09 15 18.33M41.66 18.33C41.66 15.57 35.69 13.33 28.33 13.33C20.96 13.33 15 15.57 15 18.33M41.66 18.33V28.33C41.66 31.10 35.7 33.33 28.33 33.33C20.96 33.33 15 31.10 15 28.33M15 18.33V28.33M15 28.33V38.33C15 41.10 20.96 43.33 28.33 43.33M42 43.66L45 46.66M43.33 40.00C43.33 42.76 41.09 45.00 38.33 45.00C35.57 45.00 33.33 42.76 33.33 40.00C33.33 37.23 35.57 35.00 38.33 35.00C41.09 35.00 43.33 37.23 43.33 40.00Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>

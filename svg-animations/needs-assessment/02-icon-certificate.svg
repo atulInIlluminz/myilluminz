@@ -1,0 +1,8 @@
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60" role="img"><title>icon certificate icon (hover to redraw)</title><style><![CDATA[
+path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.22,.8,.24,1) forwards .15s}
+svg{cursor:pointer}
+svg:hover path{animation:redraw 1s cubic-bezier(.22,.8,.24,1)}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes redraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+]]></style><g id="r1-icon"><rect width="60" height="60" rx="8" fill="#3E0EB7" fill-opacity="0.08"/><g id="r1-charm-certificate"><path id="r1-vector" pathLength="1" d="M39.28 12H15V45.12H22.14M32.14 35.04L30.71 48L37.14 45.12L43.57 48L42.14 35.04M45 28.56C45 32.93 41.48 36.48 37.14 36.48C32.80 36.48 29.28 32.93 29.28 28.56C29.28 24.18 32.80 20.64 37.14 20.64C41.48 20.64 45 24.18 45 28.56Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>

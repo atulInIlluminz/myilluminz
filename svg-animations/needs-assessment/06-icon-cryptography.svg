@@ -1,0 +1,8 @@
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60" role="img"><title>icon cryptography icon (hover to redraw)</title><style><![CDATA[
+path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.22,.8,.24,1) forwards .15s}
+svg{cursor:pointer}
+svg:hover path{animation:redraw 1s cubic-bezier(.22,.8,.24,1)}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes redraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+]]></style><g id="c1-icon"><rect width="60" height="60" rx="8" fill="#3E0EB7" fill-opacity="0.08"/><g id="c1-frame"><path id="c1-vector" pathLength="1" d="M21.66 29V22.33C21.66 20.12 22.54 18.00 24.10 16.44C25.67 14.87 27.78 14 30 14C32.21 14 34.32 14.87 35.89 16.44C37.45 18.00 38.33 20.12 38.33 22.33V29M18.33 29H41.66C43.50 29 45 30.49 45 32.33V43.33C45 45.17 43.50 46.66 41.66 46.66H18.33C16.49 46.66 15 45.17 15 43.33V32.33C15 30.49 16.49 29 18.33 29ZM32.5 38.33C32.5 39.71 31.38 40.83 30 40.83C28.61 40.83 27.5 39.71 27.5 38.33C27.5 36.95 28.61 35.83 30 35.83C31.38 35.83 32.5 36.95 32.5 38.33Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>

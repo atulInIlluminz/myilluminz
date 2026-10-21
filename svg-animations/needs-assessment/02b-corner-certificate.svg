@@ -1,0 +1,6 @@
+<svg viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg" width="126" height="126" role="img"><title>Card corner watermark</title><style><![CDATA[
+svg > g{transform-box:view-box;transform-origin:100% 0;animation:bob 7s ease-in-out infinite;transition:opacity .6s,scale .8s cubic-bezier(.22,.8,.24,1),rotate .8s}
+svg:hover > g{opacity:.12;scale:1.12;rotate:-6deg}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:-4px 6px}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+]]></style><g id="b1-charm-certificate" opacity="0.03"><path id="b1-vector" d="M132.25 -43.09H29.59V96.91H59.78M102.05 54.30L96.01 109.09L123.19 96.91L150.37 109.09L144.33 54.30M156.40 26.91C156.40 45.40 141.53 60.39 123.19 60.39C104.85 60.39 89.98 45.40 89.98 26.91C89.98 8.42 104.85 -6.56 123.19 -6.56C141.53 -6.56 156.40 8.42 156.40 26.91Z" stroke="#6943C7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g></svg>

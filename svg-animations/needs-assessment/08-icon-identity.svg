@@ -1,0 +1,8 @@
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60" role="img"><title>icon identity icon (hover to redraw)</title><style><![CDATA[
+path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.22,.8,.24,1) forwards .15s}
+svg{cursor:pointer}
+svg:hover path{animation:redraw 1s cubic-bezier(.22,.8,.24,1)}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes redraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+]]></style><g id="c3-icon"><rect width="60" height="60" rx="8" fill="#3E0EB7" fill-opacity="0.08"/><g id="c3-frame"><path id="c3-vector" pathLength="1" d="M14.33 44.33V42.66C14.33 40.01 15.38 37.47 17.26 35.59C19.13 33.72 21.68 32.66 24.33 32.66H27.66M35.66 31L38.99 34.33L45.66 27.66M32.66 22.66C32.66 26.34 29.68 29.33 25.99 29.33C22.31 29.33 19.33 26.34 19.33 22.66C19.33 18.98 22.31 16 25.99 16C29.68 16 32.66 18.98 32.66 22.66Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 567 355" fill="none" xmlns="http://www.w3.org/2000/svg" width="567" height="355" role="img"><title>Long system lifecycles (click to replay)</title><style><![CDATA[
+:is(g,path,circle,ellipse,line,rect,polygon):not([transform]):not(clipPath *):not(mask *){transform-box:fill-box;transform-origin:center}
+svg{cursor:pointer}
+#c1-vector {stroke-dasharray: 640; stroke-dashoffset: 640; transition: stroke-width .3s; }
+#c1-vector {animation: draw 1.5s cubic-bezier(.22,1,.36,1) .1s forwards; }
+#c1-rectangle-3, #c1-rectangle-2, #c1-rectangle, .node, #c1-vector-11 {scale: 0; transition: transform .45s cubic-bezier(.22,1,.36,1), fill .3s; }
+#c1-vector-11 {animation: pop .5s cubic-bezier(.34,1.56,.64,1) forwards; }
+#c1-rectangle-3 {animation: pop .6s cubic-bezier(.34,1.56,.64,1) .25s forwards; }
+#c1-rectangle-2 {animation: pop .6s cubic-bezier(.34,1.56,.64,1) .65s forwards; }
+#c1-rectangle {animation: pop .6s cubic-bezier(.34,1.56,.64,1) 1.05s forwards; }
+#c1-node-1 {animation: pop .55s cubic-bezier(.34,1.56,.64,1) .4s forwards; }
+#c1-node-2 {animation: pop .55s cubic-bezier(.34,1.56,.64,1) .8s forwards; }
+#c1-node-3 {animation: pop .55s cubic-bezier(.34,1.56,.64,1) 1.2s forwards; }
+#c1-vector-12 {opacity: 0; }
+#c1-vector-12 {animation: c1-arrow .6s cubic-bezier(.22,1,.36,1) 1.35s forwards; }
+#c1-vector-4, #c1-vector-7, #c1-vector-10 {animation: spin 3.6s cubic-bezier(.22,1,.36,1) infinite; }
+#c1-vector-7 {animation-delay: 1.2s; }
+#c1-vector-10 {animation-delay: 2.4s; }
+#c1-vector-2, #c1-vector-5, #c1-vector-8 {animation: march 1.2s linear infinite; }
+svg:hover #c1-rectangle-3, svg:hover #c1-rectangle-2, svg:hover #c1-rectangle {transform: translateY(-6px); }
+svg:hover #c1-rectangle {fill: #b9a1ff; }
+svg:hover #c1-vector {stroke-width: 7; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes pop { from { scale: 0; } to { scale: 1; } }
+@keyframes c1-arrow { from { opacity: 0; translate: -22px 0; } to { opacity: 1; translate: 0 0; } }
+@keyframes spin { 0%, 40% { rotate: 0deg; } 100% { rotate: 360deg; } }
+@keyframes march { to { stroke-dashoffset: -16; } }
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+]]></style>
+<g id="c1-frame-1618875153">
+<rect width="567" height="355" rx="10" fill="#FCFAFF"/>
+<path id="c1-v" opacity="0.02" fill-rule="evenodd" clip-rule="evenodd" d="M105.428 295.285L107.932 324.414C108.127 326.69 110.597 328.312 113.294 327.163L465.683 143.732C468.38 142.583 469.957 139.238 469.722 136.507C469.448 133.321 467.363 130.749 464.47 129.622L209.526 47.9094C207.134 47.1978 204.515 49.257 204.711 51.5328L207.215 80.6626C207.371 82.4832 207.951 83.8089 208.994 85.0949L208.029 84.7192C208.029 84.7192 208.492 84.6795 208.994 85.0949C210.036 86.3808 211.04 87.2116 212.466 87.5475L216.285 88.5949C234.34 98.0475 274.275 123.502 278.258 164.426C278.258 164.426 293.568 136.516 265.074 103.201L396.129 142.374L109.35 286.694C106.692 288.298 104.614 291.228 104.887 294.414L105.428 295.285Z" fill="#2D097D"/>
+<g id="c1-group-1321315492">
+<rect id="c1-rectangle" x="393" y="64" width="104" height="104" rx="26" fill="#CBB8FF"/>
+<rect id="c1-rectangle-2" x="249" y="186" width="104" height="104" rx="26" fill="#7F5FD9" fill-opacity="0.25098"/>
+<rect id="c1-rectangle-3" x="105" y="64" width="104" height="104" rx="26" fill="#F0EAFC"/>
+<path id="c1-vector" d="M37 244L157 116L301 244L445 116H516" stroke="#6142BC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="c1-vector-2" opacity="0.2" d="M157 68L157 164" stroke="#6943C7" stroke-linecap="round" stroke-dasharray="2 6"/>
+<g id="c1-node-1" class="node"><path id="c1-vector-3" d="M157 146C173.569 146 187 132.569 187 116C187 99.4315 173.569 86 157 86C140.431 86 127 99.4315 127 116C127 132.569 140.431 146 157 146Z" fill="white" stroke="#6038B5" stroke-width="2.5"/>
+<path id="c1-vector-4" d="M147.5 111.375C147.771 109.62 148.555 107.978 149.758 106.645C150.961 105.312 152.532 104.343 154.285 103.856C156.037 103.368 157.897 103.382 159.642 103.895C161.386 104.408 162.943 105.399 164.125 106.75M166.5 120.625C166.229 122.38 165.445 124.022 164.242 125.355C163.039 126.688 161.468 127.657 159.715 128.144C157.963 128.632 156.103 128.618 154.358 128.105C152.614 127.592 151.057 126.601 149.875 125.25" stroke="#6038B5" stroke-width="2.5" stroke-linecap="round"/></g>
+<path id="c1-vector-5" opacity="0.2" d="M301 190V286" stroke="#6943C7" stroke-linecap="round" stroke-dasharray="2 6"/>
+<g id="c1-node-2" class="node"><path id="c1-vector-6" d="M301 268C317.569 268 331 254.569 331 238C331 221.431 317.569 208 301 208C284.431 208 271 221.431 271 238C271 254.569 284.431 268 301 268Z" fill="#FFFCF1" stroke="#2D097D" stroke-width="2.5"/>
+<path id="c1-vector-7" d="M291.5 233.375C291.771 231.62 292.555 229.978 293.758 228.645C294.961 227.312 296.532 226.343 298.285 225.856C300.037 225.368 301.897 225.382 303.642 225.895C305.386 226.408 306.943 227.399 308.125 228.75M310.5 242.625C310.229 244.38 309.445 246.022 308.242 247.355C307.039 248.688 305.468 249.657 303.715 250.144C301.963 250.632 300.103 250.618 298.358 250.105C296.614 249.592 295.057 248.601 293.875 247.25" stroke="#2D097D" stroke-width="2.5" stroke-linecap="round"/></g>
+<path id="c1-vector-8" opacity="0.2" d="M445 68V164" stroke="#6943C7" stroke-linecap="round" stroke-dasharray="2 6"/>
+<g id="c1-node-3" class="node"><path id="c1-vector-9" d="M445 146C461.569 146 475 132.569 475 116C475 99.4315 461.569 86 445 86C428.431 86 415 99.4315 415 116C415 132.569 428.431 146 445 146Z" fill="#FFFCF1" stroke="#6038B5" stroke-width="2.5"/>
+<path id="c1-vector-10" d="M435.5 111.375C435.771 109.62 436.555 107.978 437.758 106.645C438.961 105.312 440.532 104.343 442.285 103.856C444.037 103.368 445.897 103.382 447.642 103.895C449.386 104.408 450.943 105.399 452.125 106.75M454.5 120.625C454.229 122.38 453.445 124.022 452.242 125.355C451.039 126.688 449.468 127.657 447.715 128.144C445.963 128.632 444.103 128.618 442.358 128.105C440.614 127.592 439.057 126.601 437.875 125.25" stroke="#6038B5" stroke-width="2.5" stroke-linecap="round"/></g>
+<path id="c1-vector-11" d="M38 251C41.866 251 45 247.866 45 244C45 240.134 41.866 237 38 237C34.134 237 31 240.134 31 244C31 247.866 34.134 251 38 251Z" fill="#6142BC"/>
+<path id="c1-vector-12" d="M516 101.582L536.516 116L516 130.418V101.582Z" fill="#6142BC"/>
+</g>
+</g>
+<script><![CDATA[
+(()=>{const svg=document.documentElement;
+function replay(){document.getAnimations().forEach(a=>{a.currentTime=0;a.play()});if(svg.setCurrentTime)svg.setCurrentTime(0)}svg.addEventListener('click',replay);})();
+]]></script></svg>

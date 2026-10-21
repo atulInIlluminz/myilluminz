@@ -1,0 +1,8 @@
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60" role="img"><title>icon problems icon (hover to redraw)</title><style><![CDATA[
+path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.4s cubic-bezier(.22,.8,.24,1) forwards .15s}
+svg{cursor:pointer}
+svg:hover path{animation:redraw 1s cubic-bezier(.22,.8,.24,1)}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes redraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.001s!important}}
+]]></style><g id="r3-background"><rect width="60" height="60" rx="8" fill="#3E0EB7" fill-opacity="0.08"/><g id="r3-tdesign-error-circle"><g id="r3-group"><path id="r3-vector" pathLength="1" d="M48.33 30C48.33 40.12 40.12 48.33 30.00 48.33C19.87 48.33 11.66 40.12 11.66 30C11.66 19.87 19.87 11.66 30.00 11.66C40.12 11.66 48.33 19.87 48.33 30Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path id="r3-vector-2" pathLength="1" d="M48.33 30C48.33 40.12 40.12 48.33 30.00 48.33C19.87 48.33 11.66 40.12 11.66 30C11.66 19.87 19.87 11.66 30.00 11.66C40.12 11.66 48.33 19.87 48.33 30Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path id="r3-vector-3" pathLength="1" d="M30 21.75V31.83M30 38.25H30.00V38.25H30V38.25Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></g></g></svg>
