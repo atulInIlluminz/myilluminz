@@ -1,0 +1,101 @@
+<svg viewBox="0 0 360 985" width="360" height="985" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"><title>One inventory, many frameworks (mobile)</title><style>
+text{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
+.card{fill:#fff;stroke:#ebe5ff}
+.ttl{font-size:16px;font-weight:500;fill:#170b3b}
+.lbl{font-size:10px;letter-spacing:.08em;fill:#8b76e0;font-weight:500}
+.fw rect{fill:#f7f3ff;stroke:#e3dafd}
+.fw text{font-size:11px;font-weight:500;fill:#3d2690}
+.icon{transform-box:fill-box;transform-origin:center}
+.spine{stroke:#a59aff;stroke-width:2;stroke-dasharray:4 4;fill:none;animation:dash 1s linear infinite}
+.endpoint{fill:#6943c7}
+.packet{fill:#7f5fd9;animation:drip 1.6s linear infinite}
+.sector{animation:secIn .7s cubic-bezier(.22,1,.36,1) both}
+.s1{animation-delay:.08s}.s2{animation-delay:.16s}.s3{animation-delay:.24s}.s4{animation-delay:.32s}
+#hub-orbit,#hub-orbit-2{transform-box:fill-box;transform-origin:center}
+#hub-orbit{animation:spin 30s linear infinite}
+#hub-orbit-2{animation:spin 46s linear infinite reverse}
+#hub-hub-glow{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}
+#hub-platform-face{animation:bob 3s ease-in-out infinite}
+#hub-layered-platform{animation:bob 3s ease-in-out -.4s infinite}
+@keyframes secIn{from{opacity:0;translate:0 16px}}
+@keyframes dash{to{stroke-dashoffset:-16}}
+@keyframes drip{from{translate:0 0;opacity:1}to{translate:0 22px;opacity:0}}
+@keyframes spin{to{rotate:360deg}}
+@keyframes pulse{50%{scale:1.06}}
+@keyframes bob{50%{translate:0 -7px}}
+@keyframes secCard{0%,1.2%{stroke:#ebe5ff;fill:#fff}3%,18%{stroke:#b8a3ff;fill:#fdfbff}20%,100%{stroke:#ebe5ff;fill:#fff}}
+@keyframes secChip{0%,1.2%{fill:#f7f3ff;stroke:#e3dafd}3%,18%{fill:#6943c7;stroke:#6943c7}20%,100%{fill:#f7f3ff;stroke:#e3dafd}}
+@keyframes secChipT{0%,1.2%{fill:#3d2690}3%,18%{fill:#fff}20%,100%{fill:#3d2690}}
+@keyframes secIcon{0%,1.2%{scale:1;rotate:0deg}3%,18%{scale:1.08;rotate:-4deg}20%,100%{scale:1;rotate:0deg}}
+.s0 .card{animation:secCard 13s linear 0s infinite}.s0 .fw rect{animation:secChip 13s linear 0s infinite}.s0 .fw text{animation:secChipT 13s linear 0s infinite}.s0 .icon{animation:secIcon 13s linear 0s infinite}
+.s1 .card{animation:secCard 13s linear 2.6s infinite}.s1 .fw rect{animation:secChip 13s linear 2.6s infinite}.s1 .fw text{animation:secChipT 13s linear 2.6s infinite}.s1 .icon{animation:secIcon 13s linear 2.6s infinite}
+.s2 .card{animation:secCard 13s linear 5.2s infinite}.s2 .fw rect{animation:secChip 13s linear 5.2s infinite}.s2 .fw text{animation:secChipT 13s linear 5.2s infinite}.s2 .icon{animation:secIcon 13s linear 5.2s infinite}
+.s3 .card{animation:secCard 13s linear 7.8s infinite}.s3 .fw rect{animation:secChip 13s linear 7.8s infinite}.s3 .fw text{animation:secChipT 13s linear 7.8s infinite}.s3 .icon{animation:secIcon 13s linear 7.8s infinite}
+.s4 .card{animation:secCard 13s linear 10.4s infinite}.s4 .fw rect{animation:secChip 13s linear 10.4s infinite}.s4 .fw text{animation:secChipT 13s linear 10.4s infinite}.s4 .icon{animation:secIcon 13s linear 10.4s infinite}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.001s!important;animation-iteration-count:1!important;animation-delay:0s!important}}
+
+.fx0{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+.fx1{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+.fx2{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+.fx3{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+.fx4{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+</style><path class="spine" d="M180.0 163.4V185.4"/><circle class="endpoint" cx="180.0" cy="185.4" r="4.5"/><circle class="packet" cx="180.0" cy="163.4" r="3.5"/><svg x="95.0" y="0" width="170" height="169.44805194805195" viewBox="0 0 308 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hub-inventory-hub">
+<circle id="hub-outer-halo" cx="154" cy="154" r="152.25" fill="url(#hub-paint0-radial-4382-971)" stroke="#F5F2FD" stroke-width="1.5"/>
+<circle id="hub-hub-surface" cx="154" cy="153" r="80.45" fill="url(#hub-paint1-radial-4382-971)" stroke="#684BC9" stroke-width="1.1"/>
+<circle id="hub-hub-glow" cx="153" cy="153" r="99" fill="url(#hub-paint2-radial-4382-971)"/>
+<circle id="hub-orbit" cx="153" cy="153" r="107.4" stroke="#C8BEFF" stroke-width="1.2" stroke-dasharray="5 7"/>
+<circle id="hub-orbit-2" cx="154" cy="153" r="127.4" stroke="#CFC5FF" stroke-width="1.2" stroke-dasharray="6 7"/>
+<path id="hub-layered-platform" d="M120 151L154 168.971L188 151M120 170.029L154 188L188 170.029" stroke="#FFFFFE" stroke-width="4" stroke-linecap="round"/>
+<path id="hub-platform-face" d="M154 118L190 136L154 154L118 136L154 118Z" fill="#FFFFFE"/>
+</g>
+<defs>
+<radialGradient id="hub-paint0-radial-4382-971" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(154 154) scale(153)">
+<stop offset="0.216346" stop-color="#9D71FF"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="hub-paint1-radial-4382-971" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(154 153) scale(81)">
+<stop stop-color="#9F81EC"/>
+<stop offset="1" stop-color="#6042C8"/>
+</radialGradient>
+<radialGradient id="hub-paint2-radial-4382-971" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(153 153) scale(99)">
+<stop stop-color="#A98AFF" stop-opacity="0.266667"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg><g class="sector s0"><g class="nudge n0"><rect class="card" x="0.5" y="185.4" width="359" height="192.0" rx="14"/><g class="icon"><svg x="8" y="199.44805194805195" width="64" height="64" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="fx0">
+<rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
+<path d="M38.4762 24.0444H40M40 24.0444H41.5238M40 24.0444V22.5333M40 24.0444V25.5556M50.75 32.75V44.25M43.75 32.75V44.25M36.75 32.75L36.75 44.25M29.75 32.75L29.75 44.25M24.7619 27.8222L40 18L55.2381 27.8222V30.0889H24.7619V27.8222ZM26.2857 46.7111H53.7143V49.7333H56V52H24V49.7333H26.2857V46.7111Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+
+</svg>
+</g><text class="ttl"><tspan x="80" y="232.9">Federal civilian</tspan></text><text class="lbl" x="16" y="267.4">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="16.0" y="277.4" width="93.5" height="24" rx="12"/><text x="62.8" y="293.4" text-anchor="middle">OMB M–26–15</text></g><g class="fw"><rect x="115.5" y="277.4" width="100.0" height="24" rx="12"/><text x="165.5" y="293.4" text-anchor="middle">NIST IR 8547</text></g><g class="fw"><rect x="221.5" y="277.4" width="87.0" height="24" rx="12"/><text x="265.0" y="293.4" text-anchor="middle">FIPS 140–3</text></g><g class="fw"><rect x="16.0" y="307.4" width="165.0" height="24" rx="12"/><text x="98.5" y="323.4" text-anchor="middle">FIPS 203, 204, and 205</text></g><g class="fw"><rect x="187.0" y="307.4" width="113.0" height="24" rx="12"/><text x="243.5" y="323.4" text-anchor="middle">NIST SP 800–53</text></g><g class="fw"><rect x="16.0" y="337.4" width="54.5" height="24" rx="12"/><text x="43.2" y="353.4" text-anchor="middle">FISMA</text></g><g class="fw"><rect x="76.5" y="337.4" width="67.5" height="24" rx="12"/><text x="110.2" y="353.4" text-anchor="middle">FedRAMP</text></g></g></g><g class="sector s1"><g class="nudge n1"><rect class="card" x="0.5" y="389.4" width="359" height="132.0" rx="14"/><g class="icon"><svg x="8" y="403.44805194805195" width="64" height="64" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="fx1">
+<rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
+<path d="M39.9678 17.875C44.5002 20.8088 49.0517 22.3469 54.25 23.1543V33.5322C54.2499 43.2424 48.3676 49.298 40 53.1719C31.6324 49.298 25.7501 43.2424 25.75 33.5322V23.1396C30.2534 22.3251 34.7789 20.7808 39.9678 17.875Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+
+</svg>
+</g><text class="ttl"><tspan x="80" y="426.4">Defense and defense</tspan><tspan x="80" y="447.4">industrial base</tspan></text><text class="lbl" x="16" y="471.4">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="16.0" y="481.4" width="74.0" height="24" rx="12"/><text x="53.0" y="497.4" text-anchor="middle">CNSA 2.0</text></g><g class="fw"><rect x="96.0" y="481.4" width="48.0" height="24" rx="12"/><text x="120.0" y="497.4" text-anchor="middle">CMMC</text></g><g class="fw"><rect x="150.0" y="481.4" width="119.5" height="24" rx="12"/><text x="209.8" y="497.4" text-anchor="middle">NIST SP 800–171</text></g></g></g><g class="sector s2"><g class="nudge n2"><rect class="card" x="0.5" y="533.4" width="359" height="162.0" rx="14"/><g class="icon"><svg x="8" y="547.4480519480519" width="64" height="64" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="fx2">
+<rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
+<path d="M24 36.6875H56M26.1818 36.6875V51.5417M53.8182 36.6875V51.5417M24 52H56M29.8182 35.9583V32.3125C29.8182 26.4792 34.1818 22.8333 40 22.8333C45.8182 22.8333 50.1818 26.4792 50.1818 32.3125V35.9583M33.6727 31.5833H46.6182M37.8182 22.1042V19.1875C37.8182 16.2708 42.1818 16.2708 42.1818 19.1875V22.1042M29.9818 40.0625V46.625M36.5273 40.0625V46.625M43.0727 40.0625V46.625M49.6182 40.0625V46.625M28.3636 49.5417H51.3455" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+
+</svg>
+</g><text class="ttl"><tspan x="80" y="580.9">State and local government</tspan></text><text class="lbl" x="16" y="615.4">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="16.0" y="625.4" width="145.5" height="24" rx="12"/><text x="88.8" y="641.4" text-anchor="middle">CJS Security Policy</text></g><g class="fw"><rect x="16.0" y="655.4" width="204.0" height="24" rx="12"/><text x="118.0" y="671.4" text-anchor="middle">GovRAMP (formerly StateRAMP)</text></g></g></g><g class="sector s3"><g class="nudge n3"><rect class="card" x="0.5" y="707.4" width="359" height="132.0" rx="14"/><g class="icon"><svg x="8" y="721.4480519480519" width="64" height="64" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="fx3">
+<rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
+<path d="M43.0195 22.8555C44.9029 21.1137 46.8236 20.5759 48.4932 20.7979C50.1814 21.0224 51.7193 22.0378 52.7861 23.5986C54.9045 26.698 55.1371 31.9564 50.6719 36.8594L40 47.9189L29.3271 36.8594C24.8624 31.9565 25.0956 26.6979 27.2139 23.5986C28.2807 22.0378 29.8186 21.0224 31.5068 20.7979C33.1762 20.5759 35.0963 21.114 36.9795 22.8555L39.4453 25.5615C39.5874 25.7175 39.789 25.8066 40 25.8066C40.211 25.8066 40.4126 25.7175 40.5547 25.5615L43.0195 22.8555Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+</svg>
+</g><text class="ttl"><tspan x="80" y="754.9">Healthcare</tspan></text><text class="lbl" x="16" y="789.4">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="16.0" y="799.4" width="145.5" height="24" rx="12"/><text x="88.8" y="815.4" text-anchor="middle">HIPAA Security Rule</text></g></g></g><g class="sector s4"><g class="nudge n4"><rect class="card" x="0.5" y="851.4" width="359" height="132.0" rx="14"/><g class="icon"><svg x="8" y="865.4480519480519" width="64" height="64" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="fx4">
+<rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
+<path d="M25.2725 21.75H54.7275C55.7014 21.75 56.2941 21.9949 56.6494 22.3525C57.0056 22.7111 57.25 23.3104 57.25 24.2939V45.7061C57.25 46.6896 57.0056 47.2889 56.6494 47.6475C56.2941 48.0051 55.7014 48.25 54.7275 48.25H25.2725C24.2986 48.25 23.7059 48.0051 23.3506 47.6475C22.9944 47.2889 22.75 46.6896 22.75 45.7061V24.2939L22.7607 23.9434C22.8123 23.1645 23.0388 22.6664 23.3506 22.3525C23.7059 21.9949 24.2986 21.75 25.2725 21.75Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+
+</svg>
+</g><text class="ttl"><tspan x="80" y="888.4">Payments and revenue</tspan><tspan x="80" y="909.4">systems</tspan></text><text class="lbl" x="16" y="933.4">FRAMEWORKS WE ALIGN TO</text><g class="fw"><rect x="16.0" y="943.4" width="100.0" height="24" rx="12"/><text x="66.0" y="959.4" text-anchor="middle">PCI DSS v4.0</text></g></g></g></svg>

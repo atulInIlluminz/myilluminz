@@ -36,6 +36,10 @@
 .fx4{filter:drop-shadow(0.845902px 2.5377px 4.2295px rgba(111, 63, 220, 0.231))}
 .fx5{filter:drop-shadow(3px 2px 0px rgba(45, 9, 125, 1.0))}
 .fx6{filter:drop-shadow(0px 8.45902px 19.4557px rgba(143, 118, 229, 0.161))}
+
+
+
+
 </style>
 <g id="l-security-ecosystem-manual-layers">
 <rect width="560" height="644" fill="#FDFDFF"/>

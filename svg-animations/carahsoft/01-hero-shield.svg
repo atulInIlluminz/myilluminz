@@ -1,4 +1,4 @@
-<svg viewBox="0 61 659 561" fill="none" xmlns="http://www.w3.org/2000/svg" width="659" height="561" role="img"><defs><radialGradient id="edgefade-g" cx=".5" cy=".5" r=".5"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient><mask id="edgefade" maskUnits="userSpaceOnUse" x="0.0" y="61.0" width="659.0" height="561.0"><rect x="0.0" y="61.0" width="659.0" height="561.0" fill="url(#edgefade-g)"/></mask></defs><title>Accutive Security – secure inventory hero</title><style>
+<svg viewBox="-28 33 715 617" fill="none" xmlns="http://www.w3.org/2000/svg" width="715" height="617" role="img"><title>Accutive Security – secure inventory hero</title><style>
 :is(g,path,circle,ellipse,line,rect,polygon):not([transform]):not(clipPath *):not(mask *){transform-box:fill-box;transform-origin:center}
 #h-group-13{cursor:pointer}
 #h-group-13 {animation: h-float 5s ease-in-out infinite; transition: filter .4s; }
@@ -48,9 +48,11 @@ svg:hover .h-tile {animation-duration: 2s; }
 @keyframes mv3m{0%{translate:290.00px 442.00px}2.778%{translate:280.50px 447.36px}5.556%{translate:270.99px 452.72px}8.333%{translate:261.49px 458.08px}11.111%{translate:251.98px 463.45px}13.889%{translate:242.48px 468.81px}16.667%{translate:232.98px 474.17px}19.444%{translate:223.47px 479.53px}22.222%{translate:213.97px 484.89px}25%{translate:204.46px 490.25px}27.778%{translate:194.96px 495.61px}30.556%{translate:185.45px 500.97px}33.333%{translate:175.95px 506.34px}36.111%{translate:166.45px 511.70px}38.889%{translate:156.94px 517.06px}41.667%{translate:147.44px 522.42px}44.444%{translate:137.93px 527.78px}47.222%{translate:128.43px 533.14px}50%{translate:118.93px 538.50px}52.778%{translate:109.42px 543.86px}55.556%{translate:99.92px 549.23px}58.333%{translate:90.43px 549.38px}61.111%{translate:80.97px 543.94px}63.889%{translate:71.51px 538.51px}66.667%{translate:62.05px 533.07px}69.444%{translate:52.59px 527.63px}72.222%{translate:43.12px 522.20px}75%{translate:33.66px 516.76px}77.778%{translate:24.20px 511.33px}80.556%{translate:14.74px 505.89px}83.333%{translate:5.28px 500.46px}86.111%{translate:6.14px 494.94px}88.889%{translate:15.51px 489.35px}91.667%{translate:24.88px 483.76px}94.444%{translate:34.25px 478.18px}97.222%{translate:43.63px 472.59px}100%{translate:53.00px 467.00px}}
 .mv3{animation:mv3m 4.2s linear 0.0s infinite both}
 
-.fx0{filter:drop-shadow(0px 0px 70.8px rgba(132, 67, 255, 0.8))}
-.fx1{filter:drop-shadow(0px 0px 40.3px rgba(132, 67, 255, 1.0))}
-</style>
+
+
+
+
+</style><defs><radialGradient id="h-shield-glow" cx="358.3" cy="205" r="1" gradientTransform="translate(358.3 205) scale(165 190) translate(-358.3 -205)" gradientUnits="userSpaceOnUse"><stop stop-color="#8443FF" stop-opacity=".75"/><stop offset=".55" stop-color="#8443FF" stop-opacity=".3"/><stop offset="1" stop-color="#8443FF" stop-opacity="0"/></radialGradient><radialGradient id="h-logo-glow" cx="359.5" cy="197.3" r="1" gradientTransform="translate(359.5 197.3) scale(98) translate(-359.5 -197.3)" gradientUnits="userSpaceOnUse"><stop offset=".55" stop-color="#8443FF" stop-opacity=".9"/><stop offset="1" stop-color="#8443FF" stop-opacity="0"/></radialGradient><radialGradient id="h-stage-glow" cx="586.9" cy="70.02" r="536.25" gradientUnits="userSpaceOnUse"><stop stop-color="#4B22B0"/><stop offset=".55" stop-color="#1F0E58" stop-opacity=".4"/><stop offset="1" stop-color="#1F0E58" stop-opacity="0"/></radialGradient></defs><rect x="-28" y="33" width="715" height="617" rx="28" fill="#180B47"/><rect x="-28" y="33" width="715" height="617" rx="28" fill="url(#h-stage-glow)"/>
 <g id="h-group-1321315478">
 <g id="h-group">
 <path id="h-vector" d="M577.147 369.612L522.896 338.291C521.968 337.754 522.085 336.819 523.156 336.201L576.884 305.181C577.956 304.562 579.577 304.495 580.505 305.031L634.756 336.353C635.684 336.889 635.567 337.825 634.496 338.443L580.768 369.463C579.695 370.081 578.075 370.148 577.147 369.612Z" fill="#391877"/>
@@ -151,10 +153,10 @@ svg:hover .h-tile {animation-duration: 2s; }
 <path id="h-vector-56" opacity="0.2" d="M245.615 99.215V355.076C245.615 378.17 295.955 396.891 358.053 396.891C420.151 396.891 470.493 378.17 470.493 355.076V99.215H245.615Z" fill="url(#h-paint13-linear-4382-278)"/>
 </g>
 <g id="h-group-13">
-<g id="h-vector-57" mask="url(#edgefade)" class="fx0">
+<ellipse cx="358.3" cy="205" rx="165" ry="190" fill="url(#h-shield-glow)"/><g id="h-vector-57" class="fx0">
 <path d="M358.291 73.8L256.965 118.498V201.508C256.965 246.205 301.295 303.674 358.291 329.215C415.288 316.444 459.618 246.205 459.618 201.508V118.498L358.291 73.8Z" fill="url(#h-paint14-linear-4382-278)"/>
-<path d="M461.118 201.508C461.118 224.276 449.864 253.316 431.536 278.223C413.2 303.141 387.59 324.188 358.619 330.679C358.303 330.75 357.973 330.716 357.678 330.584C328.942 317.707 303.421 296.795 285.075 273.472C266.75 250.174 255.465 224.314 255.465 201.508V118.497C255.465 117.903 255.816 117.365 256.359 117.125L357.687 72.4279L357.833 72.3713C358.181 72.2597 358.559 72.2792 358.896 72.4279L460.224 117.125C460.767 117.365 461.118 117.903 461.118 118.497V201.508Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
+<path d="M461.118 201.508C461.118 224.276 449.864 253.316 431.536 278.223C413.2 303.141 387.59 324.188 358.619 330.679C358.303 330.75 357.973 330.716 357.678 330.584C328.942 317.707 303.421 296.795 285.075 273.472C266.75 250.174 255.465 224.314 255.465 201.508V118.497C255.465 117.903 255.816 117.365 256.359 117.125L357.687 72.4279L357.833 72.3713C358.181 72.2597 358.559 72.2792 358.896 72.4279L460.224 117.125C460.767 117.365 461.118 117.903 461.118 118.497V201.508Z" stroke="#C9C2B0" stroke-opacity=".9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<clipPath id="h-shield-clip"><path d="M358.291 73.8L256.965 118.498V201.508C256.965 246.205 301.295 303.674 358.291 329.215C415.288 316.444 459.618 246.205 459.618 201.508V118.498L358.291 73.8Z"/></clipPath><g clip-path="url(#h-shield-clip)" transform="translate(0 1)"><path d="M461.118 201.508C461.118 224.276 449.864 253.316 431.536 278.223C413.2 303.141 387.59 324.188 358.619 330.679C358.303 330.75 357.973 330.716 357.678 330.584C328.942 317.707 303.421 296.795 285.075 273.472C266.75 250.174 255.465 224.314 255.465 201.508V118.497C255.465 117.903 255.816 117.365 256.359 117.125L357.687 72.4279L357.833 72.3713C358.181 72.2597 358.559 72.2792 358.896 72.4279L460.224 117.125C460.767 117.365 461.118 117.903 461.118 118.497V201.508Z" stroke="#000" stroke-opacity="0.07" stroke-width="30" fill="none"/><path d="M461.118 201.508C461.118 224.276 449.864 253.316 431.536 278.223C413.2 303.141 387.59 324.188 358.619 330.679C358.303 330.75 357.973 330.716 357.678 330.584C328.942 317.707 303.421 296.795 285.075 273.472C266.75 250.174 255.465 224.314 255.465 201.508V118.497C255.465 117.903 255.816 117.365 256.359 117.125L357.687 72.4279L357.833 72.3713C358.181 72.2597 358.559 72.2792 358.896 72.4279L460.224 117.125C460.767 117.365 461.118 117.903 461.118 118.497V201.508Z" stroke="#000" stroke-opacity="0.08" stroke-width="20" fill="none"/><path d="M461.118 201.508C461.118 224.276 449.864 253.316 431.536 278.223C413.2 303.141 387.59 324.188 358.619 330.679C358.303 330.75 357.973 330.716 357.678 330.584C328.942 317.707 303.421 296.795 285.075 273.472C266.75 250.174 255.465 224.314 255.465 201.508V118.497C255.465 117.903 255.816 117.365 256.359 117.125L357.687 72.4279L357.833 72.3713C358.181 72.2597 358.559 72.2792 358.896 72.4279L460.224 117.125C460.767 117.365 461.118 117.903 461.118 118.497V201.508Z" stroke="#000" stroke-opacity="0.1" stroke-width="12" fill="none"/><path d="M461.118 201.508C461.118 224.276 449.864 253.316 431.536 278.223C413.2 303.141 387.59 324.188 358.619 330.679C358.303 330.75 357.973 330.716 357.678 330.584C328.942 317.707 303.421 296.795 285.075 273.472C266.75 250.174 255.465 224.314 255.465 201.508V118.497C255.465 117.903 255.816 117.365 256.359 117.125L357.687 72.4279L357.833 72.3713C358.181 72.2597 358.559 72.2792 358.896 72.4279L460.224 117.125C460.767 117.365 461.118 117.903 461.118 118.497V201.508Z" stroke="#000" stroke-opacity="0.14" stroke-width="5" fill="none"/></g></g>
 <g id="h-mask-group">
 <mask id="h-mask0-4382-278" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="258" y="74" width="201" height="255">
 <path id="h-vector-58" d="M358.292 74.9991L258.164 119.277V201.507C258.164 245.785 301.97 302.714 358.292 328.016C414.613 315.365 458.419 245.785 458.419 201.507V119.277L358.292 74.9991Z" fill="url(#h-paint15-linear-4382-278)"/>
@@ -163,7 +165,7 @@ svg:hover .h-tile {animation-duration: 2s; }
 <path id="h-vector-9-2" d="M358.893 328.016V74.9992L459.653 119.367L465.615 262.663L400.032 328.016H358.893Z" fill="#2E117A"/>
 </g>
 </g>
-<g id="h-logo" mask="url(#edgefade)" class="fx1">
+<circle cx="359.5" cy="197.3" r="98" fill="url(#h-logo-glow)"/><g id="h-logo" class="fx1">
 <rect x="302" y="139.8" width="115" height="115" rx="57.5" fill="url(#h-paint16-linear-4382-278)"/>
 <rect x="302" y="139.8" width="115" height="115" rx="57.5" stroke="#9E6CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="h-carahsoft-idenqw3m5f-1-1" clip-path="url(#h-clip2-4382-278)">
@@ -175,7 +177,7 @@ svg:hover .h-tile {animation-duration: 2s; }
 </g>
 </g>
 
-<g id="h-fx" pointer-events="none">
+<g id="h-fx">
   <path id="h-trace-a" d="M426 447 L507 504 L684 402 L616 362" fill="none"/>
   <path id="h-trace-b" d="M290 442 L95 552 L1 498 L53 467" fill="none"/>
   <circle class="mv1 h-packet" r="3.5" fill="#d9ccff"/>

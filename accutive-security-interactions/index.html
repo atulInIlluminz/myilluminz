@@ -316,10 +316,13 @@ footer.note { width: min(1200px, 100% - 32px); margin: 40px auto 60px; font-size
   .sectors-map { aspect-ratio: auto; display: grid; gap: 10px; }
   .sectors-map > svg.links { display: none; }
   .hub { position: relative; top: 0; width: 160px; margin: 0 auto; }
-  .sector { position: relative; left: 0; top: auto !important; height: auto !important; padding: 12px; }
-  .sector-body { grid-template-columns: 1fr; }
-  .sector h3 { font-size: 15px; } .fw small { font-size: 10px; } .fw span { font-size: 11px; }
-  .fw { border-left: 0; padding-left: 0; }
+  .sector { position: relative; left: 0; top: auto !important; height: auto !important; padding: 14px; grid-template-columns: auto 1fr; column-gap: 12px; row-gap: 10px; }
+  /* icon and title share the first row, frameworks run full width below */
+  .sector-body { display: contents; }
+  .sector .icon { grid-row: 1; grid-column: 1; width: 52px; margin: -6px 0 -10px -6px; }
+  .sector h3 { grid-row: 1; grid-column: 2; font-size: 15px; }
+  .fw { grid-row: 2; grid-column: 1 / -1; border-left: 0; padding-left: 0; }
+  .fw small { font-size: 10px; } .fw span { font-size: 11px; }
 }
 
 /* =========================================================

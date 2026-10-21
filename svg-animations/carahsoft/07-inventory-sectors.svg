@@ -66,6 +66,10 @@ text{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
 .fx2{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
 .fx3{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
 .fx4{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+
+
+
+
 </style><g transform="translate(232 120)">
 <path id="sl-0" class="link link-0" d="M0 265C82 265 86 1 187 1"/><path id="sl-1" class="link link-1" d="M0 265C89 265 88 145 187 145"/>
 <path id="sl-2" class="link link-2" d="M0 265C76 265 96 286 187 286"/><path id="sl-3" class="link link-3" d="M0 265C87 265 91 417 187 417"/>
