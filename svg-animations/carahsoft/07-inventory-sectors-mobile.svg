@@ -39,6 +39,8 @@ text{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
 .fx2{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
 .fx3{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
 .fx4{filter:drop-shadow(0px 5px 10px rgba(142, 118, 216, 0.039))}
+
+
 </style><path class="spine" d="M180.0 163.4V185.4"/><circle class="endpoint" cx="180.0" cy="185.4" r="4.5"/><circle class="packet" cx="180.0" cy="163.4" r="3.5"/><svg x="95.0" y="0" width="170" height="169.44805194805195" viewBox="0 0 308 307" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="hub-inventory-hub">
 <circle id="hub-outer-halo" cx="154" cy="154" r="152.25" fill="url(#hub-paint0-radial-4382-971)" stroke="#F5F2FD" stroke-width="1.5"/>
@@ -95,6 +97,7 @@ text{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
 <g class="fx4">
 <rect x="10" y="5" width="60" height="60" rx="10" fill="#E7DDFE"/>
 <path d="M25.2725 21.75H54.7275C55.7014 21.75 56.2941 21.9949 56.6494 22.3525C57.0056 22.7111 57.25 23.3104 57.25 24.2939V45.7061C57.25 46.6896 57.0056 47.2889 56.6494 47.6475C56.2941 48.0051 55.7014 48.25 54.7275 48.25H25.2725C24.2986 48.25 23.7059 48.0051 23.3506 47.6475C22.9944 47.2889 22.75 46.6896 22.75 45.7061V24.2939L22.7607 23.9434C22.8123 23.1645 23.0388 22.6664 23.3506 22.3525C23.7059 21.9949 24.2986 21.75 25.2725 21.75Z" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M22.75 30.5H57.25M29 41H36M40 41H43" stroke="#6943C7" stroke-width="1.5" stroke-linecap="round"/>
 </g>
 
 </svg>
