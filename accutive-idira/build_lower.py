@@ -58,13 +58,15 @@ CSS = ("@keyframes f{0%,100%{transform:translateY(0)}50%{transform:translateY(-7
 def spark(x, y, size, cls=""):
     return '<g transform="translate(%s %s) scale(%.3f)"><path class="tw %s" d="%s" fill="#747EF2"/></g>' % (x, y, size / 43, cls, SPARK)
 
+BG = '<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#000"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>'
 def doc(w, h, title, defs, body, bg=None):
+    defs += BG; bg = "url(#bg)"
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" fill="none" role="img" aria-label="%s"><title>%s</title><style>%s</style><defs>%s</defs>%s%s</svg>\n'
             % (w, h, w, h, title, title, CSS, defs, ('<rect width="%d" height="%d" fill="%s"/>' % (w, h, bg)) if bg else "", body))
 
 # ------------------------------------------------------------------ PAM stack
 def pam():
-    gx, gy = 10.7, 16
+    gx, gy = 160.7, 33
     defs = (slab_defs("a") +
         '<linearGradient id="b0" x1="103.5" y1="28.1" x2="245.1" y2="107" gradientUnits="userSpaceOnUse"><stop stop-color="#B289FF"/><stop offset="1" stop-color="#3D2C5D"/></linearGradient>'
         '<linearGradient id="l0" x1="18.6" y1="3.4" x2="4.9" y2="21.7" gradientUnits="userSpaceOnUse"><stop stop-color="#6739BE"/><stop offset="1" stop-color="#ECE3FF"/></linearGradient>'
@@ -89,12 +91,12 @@ def pam():
     disc = ('<g transform="matrix(.9397 .342 -.8746 .4848 137 27.7)"><circle cx="49.1" cy="49.1" r="49.1" fill="#CFD1D8"/><circle cx="49.1" cy="49.1" r="49.1" fill="url(#dots)"/></g>'
             '<g class="pu d1" fill="#265BFF"><path d="M123.7 77.5L112 84L99.7 66.4L128.1 50.6L168.9 52.4L181 69.9L164.5 69.1L157.2 58.9L133.1 57.7L116.1 67.1L123.7 77.5Z"/><path d="M123.7 77.4L147.5 78.5L164.5 69.1L140.2 68.1L123.7 77.4Z"/></g>')
     top = '<g class="fl"><g transform="translate(8.7 0)">%s</g></g>' % top_slab(FACE_PAM, "#E7E8EA", disc, "a")
-    body = '<g transform="translate(%s %s)">%s%s%s</g>%s' % (gx, gy, bottom, mid, top, spark(396, 16, 43))
-    return 450, 330, "Privileged Access Management layers", defs, body
+    body = '<g transform="translate(%s %s)">%s%s%s</g>%s' % (gx, gy, bottom, mid, top, spark(546, 33, 43))
+    return 613, 363, "Privileged Access Management layers", defs, body
 
 # ------------------------------------------------------------------ Agentic AI slab
 def ai():
-    gx, gy = 116, 80
+    gx, gy = 137, 93
     defs = (slab_defs("a") +
         '<linearGradient id="l0" x1="44.14" y1="58.29" x2="28.3" y2="79.42" gradientUnits="userSpaceOnUse"><stop stop-color="#6739BE"/><stop offset="1" stop-color="#ECE3FF"/></linearGradient>'
         '<linearGradient id="l1" x1="33.95" y1="89.22" x2="31.54" y2="104.5" gradientUnits="userSpaceOnUse"><stop stop-color="#ADADAD"/><stop offset="1" stop-color="#DBDADF"/></linearGradient>'
@@ -111,11 +113,10 @@ def ai():
     shield = ('<g class="pu d1" fill="#C5A6FF"><path d="M126.77 64.06L131.44 65.95L134.46 62.43L126.77 64.06Z"/>'
               '<path d="M191.59 68.11L173.28 47.2C173.09 46.97 172.65 46.8 172.13 46.74L123.6 40.64C122.98 40.54 122.12 40.65 121.6 40.9L107.74 47.67C82.91 59.77 78.42 73.15 95.61 84.37L96.14 84.58C122.92 91.05 152.5 87.89 177.32 75.78L191.19 69.02C191.7 68.77 191.87 68.45 191.59 68.11ZM170.82 49.11L180.16 59.75L172.19 63.63L166.46 63.83L166.4 62.13C166.38 61.67 165.59 61.34 164.54 61.38L160.37 61.53C159.73 60.66 158.91 59.79 157.93 59.02L160.84 57.6C161.53 57.26 161.51 56.72 160.8 56.43L158.06 55.33L170.82 49.11ZM151.84 66.55L138.23 73.19C137.54 73.53 136.33 73.57 135.62 73.28C134.91 73 134.89 72.46 135.58 72.12L149.19 65.48C149.87 65.15 151.09 65.11 151.8 65.39C152.5 65.68 152.52 66.22 151.84 66.55ZM143.51 44.87L168.25 48L155.5 54.22L152.76 53.11C152.06 52.82 150.84 52.87 150.15 53.2L147.24 54.62C145.31 54.22 143.48 53.94 141.38 53.78L141.32 51.92C141.3 51.46 140.5 51.13 139.46 51.17L135.63 51.3L135.55 48.75L143.51 44.87ZM94.21 66.55L89.07 69.06C89.7 62.29 96.86 55.33 110.39 48.74L123.48 42.35L139.66 44.38L132.38 47.93C132.04 48.1 131.88 48.34 131.79 48.53L131.9 51.4L128.07 51.53C127.55 51.55 127.12 51.68 126.77 51.85C126.43 52.01 126.27 52.25 126.19 52.45L126.25 54.31C124.26 54.65 122.27 55.07 120.46 55.56L117.46 54.34C116.75 54.06 115.53 54.1 114.85 54.43L106.97 58.28C106.29 58.61 106.31 59.15 107.02 59.44L109.93 60.61C108.92 61.5 108.16 62.34 107.67 63.29L103.5 63.44C102.98 63.45 102.55 63.58 102.2 63.75C101.86 63.92 101.7 64.16 101.62 64.35L101.67 66.06L95.24 66.28C95.07 66.29 94.55 66.38 94.21 66.55ZM97.38 82.56C92.38 79.02 89.72 75.27 89.06 71.42L96.26 67.91L101.99 67.71L102.05 69.42C102.07 69.88 102.95 70.24 103.91 70.17L108.08 70.02C108.72 70.89 109.53 71.75 110.52 72.53L107.61 73.95C106.92 74.29 106.94 74.83 107.65 75.11L110.39 76.22L97.38 82.56ZM130.03 67.66L123.05 64.85L118.73 65.77C118.04 65.95 117.25 65.86 116.72 65.65C116.55 65.58 116.37 65.51 116.28 65.39C115.83 64.98 116.33 64.5 117.28 64.27L136.9 60.06C137.5 59.92 138.38 59.97 138.91 60.18C139.44 60.4 139.53 60.74 139.37 61.06L131.76 70.12C131.35 70.56 130.4 70.79 129.35 70.67C128.38 70.51 127.93 70.1 128.27 69.63L130.03 67.66ZM125.89 86.22C117.19 86.37 108.53 85.47 100.11 83.59L113.12 77.25L115.86 78.35C116.57 78.64 117.78 78.6 118.47 78.26L121.38 76.84C123.31 77.24 125.15 77.53 127.24 77.68L127.31 79.54C127.32 80.01 128.12 80.33 129.16 80.29L132.99 80.16L133.08 82.71L125.89 86.22ZM174.67 74.71C161.15 81.31 146.22 85.12 131.1 86.04L136.24 83.53C136.58 83.37 136.75 83.13 136.83 82.93L136.73 80.07L140.55 79.93C141.07 79.91 141.5 79.78 141.85 79.62C142.19 79.45 142.36 79.21 142.44 79.01L142.37 77.16C144.36 76.82 146.35 76.4 148.16 75.91L151.16 77.12C151.87 77.41 153.09 77.36 153.77 77.03L161.65 73.19C162.33 72.85 162.31 72.31 161.61 72.03L158.6 70.81C159.62 69.93 160.37 69.09 160.86 68.14L165.03 67.99C165.56 67.97 165.99 67.84 166.33 67.68C166.67 67.51 166.84 67.27 166.92 67.07L166.86 65.37L173.29 65.15C173.81 65.13 174.25 65 174.59 64.83L181.86 61.28L187.94 68.24L174.67 74.71Z"/></g>')
     top = '<g class="fl"><g transform="translate(28 0)">%s</g></g>' % top_slab(FACE_AI, "#360D84", shield, "a")
-    body = '<g transform="translate(%s %s)">%s%s</g>%s%s%s' % (gx, gy, bottom, top, spark(506, 46, 43), spark(492, 42, 19, "d1"), spark(10, 10, 36, "d2"))
-    return 560, 300, "Agentic AI Security", defs, body
+    body = '<g transform="translate(%s %s)">%s%s</g>%s%s%s' % (gx, gy, bottom, top, spark(527, 62, 43), spark(513, 58, 19, "d1"), spark(31, 26, 36, "d2"))
+    return 613, 343, "Agentic AI Security", defs, body
 
 for name, fn in (("idira-pam-animated", pam), ("idira-agentic-ai-animated", ai)):
     w, h, title, defs, body = fn()
     open(os.path.join(OUT, name + ".svg"), "w").write(doc(w, h, title, defs, body))
-    open(os.path.join(OUT, name + "-dark-bg.svg"), "w").write(doc(w, h, title, defs, body, "#0b0222"))
     print(name, os.path.getsize(os.path.join(OUT, name + ".svg")), "bytes")
